@@ -7,11 +7,45 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="all">
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <div class="box">
+      <h1>Login</h1>
+      <br>
+      <br>
+      <div class="text-field">
+
+      <!-- <div class="input-group mb-3">
+
+        <input type="text" id="one" class="form-control" placeholder="Username" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div> -->
+
+      <div class="input-group mb-3">
+        <label for="">Email:-</label>
+        <br>
+        <input type="email" id="two" class="form-control" placeholder="Email" [(ngModel)]="user"  aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <label for="">Password:-</label>
+        <br>
+        <input type="password" id="two" class="form-control" placeholder="password"  [(ngModel)]="password" aria-label="password"
+          aria-describedby="basic-addon1">
+      </div>
+    </div>
+      <br><br>
+
+
+      <div class="button">
+        <button type="button" class="btn btn-primary" (click)="createaccount()">CREATE ACCOUNT</button>
+
+      </div>
+
+      <br><br>
+      <p id="para">Already have an account?<a routerLink="/login"><br>Forgot password?</a></p>
+    </div>
+</div>
+
 </ion-content>

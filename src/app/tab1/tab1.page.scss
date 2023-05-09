@@ -1,0 +1,68 @@
+.all{
+    display: flex;
+    align-items: center;
+    
+    height: 100vh;
+    width: 100vw;
+      background-image: url("/assets/login.jpg");
+      filter: blur();
+    
+} 
+.box{
+    
+    margin-left: 38%;
+    background-color: white;
+    width:25vw;
+    /* height: 50%; */
+    text-align: center;
+    border:none;
+    border-radius:10px;
+}
+
+.btn{
+    width:70%;
+   margin-top: 25px;
+    border: none;
+    border:1px solid black;
+    font-weight: bold;
+    height:auto;
+    background: transparent;
+    color:black;
+    
+}
+#user{
+    margin-left: 100px;
+}
+.one{
+    width: 70%;
+        height:33px;
+        border:none;
+        border-bottom: 1px solid black;
+    
+    }
+    #para-user{
+        margin-top:15px;
+        margin-right: 180px;
+    }
+    #para-pass{
+        margin-left: 130px;
+    }
+    #para-pass a{
+        text-decoration: none;
+        color:black;
+    }
+.inupt{
+    margin-top: 40px;
+}
+#insta{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#para-sing{
+    margin-top:50px;
+    }
+
+    #para-last a{
+        text-decoration: none;
+        color:black;
+    }
