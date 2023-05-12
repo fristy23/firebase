@@ -1,10 +1,3 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Signup
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
   <div class="all">
@@ -12,22 +5,28 @@
    
     <div class="box">
       <h1>SIGNUP</h1>
+      <div class="inupt">
+        <p id="para-user">Name</p>
+        <i class="fa-solid fa-user" style="color: #0e5ce1;"></i>
+        <input type="text" class="one"  placeholder="Type username">
+      </div>
+     
   
       <div class="inupt">
-        <p id="para-user">Username</p>
+        <p id="para-user">email</p>
         <i class="fa-solid fa-user" style="color: #0e5ce1;"></i>
-        <input type="text" class="one" [(ngModel)]="user"  placeholder="Type username">
+        <input type="email" class="one" placeholder="Type Email" [(ngModel)]="email">
       </div>
       <div class="inupt">
         <p id="para-user">Password</p>
         <i class="fa-sharp fa-solid fa-lock" style="color: #0936ec;"></i>
-        <input type="password" class="one" [(ngModel)]="password" placeholder="Type Password">
+        <input type="password" class="one"  placeholder="Type Password" [(ngModel)]="password">
         <p id="para-pass"><a href="#">Forgot Password ?</a></p>
       </div>
       <div class="button">
-        <button type="button" class="btn btn-primary" (click)="login()" routerLink="/logout">CREATE ACCOUNT</button>
+        <button type="button" class="btn btn-primary"  (click)="createaccount()"   >CREATE ACCOUNT</button>
       </div>
-<button (click)="google()">google</button>
+  <button (click)="google()">google</button>
       <div class="sign">
       
         <a href="www.google.com"><i class="fa-brands fa-facebook fa-beat-fade" (click)="google()" style="color: #0620e5;"></i>

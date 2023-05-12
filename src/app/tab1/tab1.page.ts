@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { getAuth,signInWithPopup, createUserWithEmailAndPassword, signOut,GoogleAuthProvider } from "firebase/auth";
 import { FirebaseService } from 'src/app/auth/firebase.service';
 import { AppComponent } from 'src/app/app.component';
+import { Router } from '@angular/router';
 
 const provider = new GoogleAuthProvider();
 @Component({
@@ -10,36 +11,33 @@ const provider = new GoogleAuthProvider();
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  user = " "
-  password = " "
+  user=""
+  email = ""
+  password = ""
 
-  constructor() { }
-  login() {
+  constructor(private router:Router) { }
+  createaccount() {
     const auth = getAuth();
-    createUserWithEmailAndPassword(auth, this.user, this.password)
+    createUserWithEmailAndPassword(auth,this.email, this.password)
       .then((userCredential) => {
 
         const user = userCredential.user;
         // console.log(this.user);
         // console.log(this.password);
-        alert("Succesful login");
+        alert("Succesful created account");
+        console.log("created");
+        this.router.navigate(['/logout']);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        console.log("not created account");
+        alert("Please Created Account!!");
+
 
       });
   }
-  signup() {
-    const auth = getAuth();
-    signOut(auth).then(() => {
-      alert("succesful Signout");
-    }).catch((error) => {
-      const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log("error");
-    });
-  }
+  
   google(){
     const auth = getAuth();
     signInWithPopup(auth, provider)

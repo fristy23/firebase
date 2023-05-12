@@ -1,0 +1,33 @@
+.row-12{
+    display: flex;
+    padding:5px;
+   }
+   
+   #items-img{
+       margin: 5px;
+       border-style: solid;
+       border-width: 10px;
+       border-left-color: aqua;
+       border-right-color: blueviolet;
+       border-top-color:red;
+       border-bottom-color: lightgreen;
+   }
+   h4{
+       text-align: center;
+   }
+   p{
+       text-align: center;
+   }
+   .items1{
+       align-content: center;
+       text-align: center;
+       
+   }
+   .items2{
+       text-align: center;
+   
+   }
+   .btn{
+       border: 1px solid black;
+   }
+   

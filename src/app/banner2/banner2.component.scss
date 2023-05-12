@@ -1,0 +1,69 @@
+.banner{
+	background-image: url("/assets/img/fashion.jpg");
+	padding-left: 100px;
+	 border-color: black;
+	 border-style:solid; 
+	border-top-color: purple;
+	 border-left-color: lightgreen;
+	 border-bottom-color: palevioletred;
+	 border-width: 15px; 
+	border-right-color: red; 
+	text-align: center;
+	height: 400px;
+	width: 1200;
+}
+.banner-content{
+	background-color:white;
+	width: 40vw;
+	height: 60px;
+	margin-top: 200px;
+	margin-left: 200px;
+	color: black;
+    
+	
+}
+#bann-h{
+    font-size:40px;
+	font-weight: bold;
+    background-color: white;
+} 
+ .btn-shop{
+	border:2.5px solid black;
+    width: 150px;
+    height: 60px;
+		color: black;
+        margin-top:20px;
+		margin-bottom: 20px;
+		background-color:white;
+		font-size: 20px;
+		border: none;
+        font-weight: bold;
+}
+ 
+.btn{
+	background-color: #18FFFF;
+		border:none;
+		border:2.5px solid black;
+		font-weight: bold;
+		color: black;
+		margin-bottom: 20px;
+		
+}
+.row-12{
+    padding: 2px;
+    display: flex;
+}
+.one{
+    padding: 5px;
+    height: 50vh;
+    width:25vw;
+}
+h4{
+    color: black;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+

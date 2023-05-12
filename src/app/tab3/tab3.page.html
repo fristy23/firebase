@@ -1,10 +1,4 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
   <div class="all">
@@ -22,14 +16,14 @@
       </div> -->
 
       <div class="input-group mb-3">
-        <label for="">Email:-</label>
+        <!-- <label for="">Email:-</label> -->
         <br>
         <input type="email" id="two" class="form-control" placeholder="Email" [(ngModel)]="user"  aria-label="Username"
           aria-describedby="basic-addon1">
       </div>
 
       <div class="input-group mb-3">
-        <label for="">Password:-</label>
+        <!-- <label for="">Password:-</label> -->
         <br>
         <input type="password" id="two" class="form-control" placeholder="password"  [(ngModel)]="password" aria-label="password"
           aria-describedby="basic-addon1">
@@ -39,13 +33,14 @@
 
 
       <div class="button">
-        <button type="button" class="btn btn-primary" (click)="createaccount()">CREATE ACCOUNT</button>
+        <button type="button" class="btn btn-primary"   (click)="login()">login</button>
 
       </div>
-
       <br><br>
-      <p id="para">Already have an account?<a routerLink="/login"><br>Forgot password?</a></p>
+      <p id="para">Already have an account?<a ><br>Forgot password?</a></p>
     </div>
+    
+    
 </div>
 
 </ion-content>
