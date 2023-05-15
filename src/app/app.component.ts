@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { getFirestore } from "firebase/firestore";
+import { RuleService} from 'src/app/rule.service'
+
 
 
 const firebaseConfig = {
@@ -29,10 +31,9 @@ const db = getFirestore(app);
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  // data:any
-  // constructor(private google:EmailService) {
-  // this.data=google.signUpgoogle();
-  // }
+  
 
   
 }
+
+

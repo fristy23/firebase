@@ -5,6 +5,7 @@ import {EmailService} from 'src/app/services/authgoogle.service';
 import { Router } from '@angular/router';
 import {FirebaseService} from 'src/app/services/firebase.service';
 
+
 // const provider = new GoogleAuthProvider();
 @Component({
   selector: 'app-tab1',
@@ -24,9 +25,10 @@ export class Tab1Page {
      if (this.data==true)
      {
     manual.createaccount(this.user, this.email,this.password);
+    
      }
   }
- 
+
   
   // google(){
   //   const auth = getAuth();

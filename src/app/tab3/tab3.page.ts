@@ -5,6 +5,7 @@ import { AppComponent } from 'src/app/app.component';
 import { Router } from '@angular/router';
 import { FirebaseService } from '../services/firebase.service';
 
+
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
@@ -18,6 +19,7 @@ export class Tab3Page {
 
     manual.login(this.email,this.password)
   }
+  
 
   
   logout(){

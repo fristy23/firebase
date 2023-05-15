@@ -5,7 +5,8 @@ import { signOut, signInWithEmailAndPassword ,onAuthStateChanged} from "firebase
 //import {app} from 'src/app/app.component';
 import { Router } from '@angular/router';
 // Initialize Firebase
-
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD9pAEmHyFyeJDBtl4RdVr2rArGDWo8AnE",
@@ -38,6 +39,7 @@ export class FirebaseService {
         alert("Succesful created account");
         console.log("created");
         this.router.navigate(['/logout']);
+        
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -47,6 +49,7 @@ export class FirebaseService {
 
 
       });
+      this.add(user,email,password);
   }
 
   login(email:any,password:any)
@@ -89,5 +92,20 @@ export class FirebaseService {
 
 const auth = getAuth();
 
+  }
+
+  async add(user:string,email:any,password:any) {
+    try {
+      const db = getFirestore();
+      const docRef = await addDoc(collection(db, "users"), {
+        user:user,
+        Email:email,
+        password:password
+        
+      });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
   }
 }
