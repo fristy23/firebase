@@ -12,10 +12,10 @@
         </li>
        
         <li class="nav-item" id="navbar1">
-          <a class="nav-link" id="navbar1">CONTACT</a>
+          <button>{{btn.getButton('CONTACT')}}</button>
         </li>
         <li class="nav-item" id="navbar1">
-          <a class="nav-link " id="navbar1" routerLink="/about">ABOUT US</a>
+          <button>{{btn.getButton('ABOUT')}}</button>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -30,10 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" id="navbar1">
           <div class="dropdown">
-            <button>ACCOUNT</button>
+            <button>LOGIN</button>
             <div class="dropdown-options">
-                <a (click)="login()">LOGIN</a>
-                <a (click)="signup()">SIGNUP</a>
+                <a (click)="button()">ADMIN LOGIN</a>
+                <a (click)="login()">USER LOGIN </a>
             
                 
             </div>

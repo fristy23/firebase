@@ -7,6 +7,10 @@ import { Router } from '@angular/router';
 // Initialize Firebase
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { getFirestore } from "firebase/firestore";
+import { getDatabase } from "firebase/database";
+
+
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyD9pAEmHyFyeJDBtl4RdVr2rArGDWo8AnE",
@@ -19,7 +23,12 @@ const firebaseConfig = {
   measurementId: "G-XTSQEC3T86"
 };
 
+
+
 const app = initializeApp(firebaseConfig);
+
+const database = getDatabase(app);
+const db = getFirestore(app);
 @Injectable({
   providedIn: 'root'
 })

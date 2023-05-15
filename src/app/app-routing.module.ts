@@ -9,6 +9,7 @@ import { LogoutPage } from './logout/logout.page';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
+import { ButtonComponent } from './components/button/button.component';
 
 
 const routes: Routes = [
@@ -57,8 +58,13 @@ const routes: Routes = [
   {
     path:'landing',
     component:LandingComponent,
+  },
+  {
+    path:'button',  
+    component:ButtonComponent
+    
+  
   }
- 
   
  
 ];
