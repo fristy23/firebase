@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { getAuth,signInWithPopup, createUserWithEmailAndPassword, signOut,GoogleAuthProvider } from "firebase/auth";
-import { FirebaseService } from 'src/app/auth/firebase.service';
+import { FirebaseService } from 'src/app/services/firebase.service';
 
 
 

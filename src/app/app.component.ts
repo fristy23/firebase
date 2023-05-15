@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { getFirestore } from "firebase/firestore";
-import { EmailService } from './auth/email.service'
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyD9pAEmHyFyeJDBtl4RdVr2rArGDWo8AnE",

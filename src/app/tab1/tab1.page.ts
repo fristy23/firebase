@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { getAuth,signInWithPopup, createUserWithEmailAndPassword, signOut,GoogleAuthProvider } from "firebase/auth";
 
-import {EmailService} from 'src/app/auth/email.service';
+import {EmailService} from 'src/app/services/authgoogle.service';
 import { Router } from '@angular/router';
-import {FirebaseService} from 'src/app/auth/firebase.service';
+import {FirebaseService} from 'src/app/services/firebase.service';
 
 // const provider = new GoogleAuthProvider();
 @Component({

@@ -3,7 +3,7 @@ import { getAuth, signOut, signInWithEmailAndPassword ,onAuthStateChanged} from 
 import { AppComponent } from 'src/app/app.component';
 //import {firebase} from 'firebase/auth';
 import { Router } from '@angular/router';
-import { FirebaseService } from '../auth/firebase.service';
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
   selector: 'app-tab3',
