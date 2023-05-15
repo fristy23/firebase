@@ -24,12 +24,12 @@
         <p id="para-pass"><a href="#">Forgot Password ?</a></p>
       </div>
       <div class="button">
-        <button type="button" class="btn btn-primary"  (click)="createaccount()"   >CREATE ACCOUNT</button>
+        <button type="button" class="btn btn-primary" data="true"  (click)="manual.createaccount(this.user,this.email,this.password)"   >CREATE ACCOUNT</button>
       </div>
-  <button (click)="google()">google</button>
+  <button (click)="google.signUpgoogle()">google</button>
       <div class="sign">
       
-        <a href="www.google.com"><i class="fa-brands fa-facebook fa-beat-fade" (click)="google()" style="color: #0620e5;"></i>
+        <a href="www.google.com"><i class="fa-brands fa-facebook fa-beat-fade" (click)="google.signUpgoogle()" style="color: #0620e5;"></i>
         </a> 
         <a href="www.google.com"><i class="fa-brands fa-instagram fa-fade" id="insta" style="color: #b91409;"></i></a>
         <a href="www.google.com"><i class="fa-brands fa-twitter fa-beat" style="color: #115ee4;"></i></a>

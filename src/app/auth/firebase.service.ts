@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { signOut, signInWithEmailAndPassword ,onAuthStateChanged} from "firebase/auth";
 //import {app} from 'src/app/app.component';
-
+import { Router } from '@angular/router';
 // Initialize Firebase
 
 
@@ -23,6 +24,70 @@ const app = initializeApp(firebaseConfig);
 })
 export class FirebaseService {
 
-  constructor() { }
+  constructor(private router:Router) { }
   
+  createaccount(user:any,email:any,password:any) {
+    
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth,email,password)
+      .then((userCredential) => {
+
+        const user = userCredential.user;
+        // console.log(this.user);
+        // console.log(this.password);
+        alert("Succesful created account");
+        console.log("created");
+        this.router.navigate(['/logout']);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log("not created account");
+        alert("Please Created Account!!");
+
+
+      });
+  }
+
+  login(email:any,password:any)
+  {
+    const auth = getAuth();
+    signInWithEmailAndPassword(auth, email,password)
+       .then((userCredential) => {
+
+      //   const user = userCredential.user;
+      //   // console.log(this.user);
+      //   // console.log(this.password);
+   
+         onAuthStateChanged(auth, (user) => {
+          if (user) {
+            const uid = user.uid;
+            console.log("uerid",uid)
+            this.router.navigate(['/home']);
+          } else {
+            console.log("signout");
+            this.router.navigate(['/tab3']);
+          }
+        });
+       })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log("errorcode",errorCode);
+        console.log("errorMessage",errorMessage);
+        console.log("not created");
+        
+      });
+
+
+  }
+  logout(){
+   
+  }
+  currentlysignin(){
+    
+
+const auth = getAuth();
+
+  }
 }

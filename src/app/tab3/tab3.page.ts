@@ -3,6 +3,7 @@ import { getAuth, signOut, signInWithEmailAndPassword ,onAuthStateChanged} from 
 import { AppComponent } from 'src/app/app.component';
 //import {firebase} from 'firebase/auth';
 import { Router } from '@angular/router';
+import { FirebaseService } from '../auth/firebase.service';
 
 @Component({
   selector: 'app-tab3',
@@ -10,42 +11,15 @@ import { Router } from '@angular/router';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-  user=""
+  email=""
   password=""
 
-  constructor(private router:Router) {}
-  login()
-  {
-    const auth = getAuth();
-    signInWithEmailAndPassword(auth, this.user,this.password)
-       .then((userCredential) => {
+  constructor( public manual:FirebaseService,private router:Router) {
 
-      //   const user = userCredential.user;
-      //   // console.log(this.user);
-      //   // console.log(this.password);
-   
-         onAuthStateChanged(auth, (user) => {
-          if (user) {
-            const uid = user.uid;
-            console.log("uerid",uid)
-            this.router.navigate(['/home']);
-          } else {
-            console.log("signout");
-            this.router.navigate(['/tab3']);
-          }
-        });
-       })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log("errorcode",errorCode);
-        console.log("errorMessage",errorMessage);
-        console.log("not created");
-        
-      });
-
-
+    manual.login(this.email,this.password)
   }
+
+  
   logout(){
    
   }
@@ -55,5 +29,4 @@ export class Tab3Page {
 const auth = getAuth();
 
   }
-
 }

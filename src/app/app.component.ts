@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { getFirestore } from "firebase/firestore";
-
+import { EmailService } from './auth/email.service'
 
 const firebaseConfig = {
   apiKey: "AIzaSyD9pAEmHyFyeJDBtl4RdVr2rArGDWo8AnE",
@@ -22,16 +22,17 @@ const db = getFirestore(app);
 
 
 
-
+ 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {
- 
-  }
+  // data:any
+  // constructor(private google:EmailService) {
+  // this.data=google.signUpgoogle();
+  // }
 
   
 }

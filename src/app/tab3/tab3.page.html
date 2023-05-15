@@ -18,7 +18,7 @@
       <div class="input-group mb-3">
         <!-- <label for="">Email:-</label> -->
         <br>
-        <input type="email" id="two" class="form-control" placeholder="Email" [(ngModel)]="user"  aria-label="Username"
+        <input type="email" id="two" class="form-control" placeholder="Email" [(ngModel)]="email"  aria-label="Username"
           aria-describedby="basic-addon1">
       </div>
 
@@ -33,7 +33,7 @@
 
 
       <div class="button">
-        <button type="button" class="btn btn-primary"   (click)="login()">login</button>
+        <button type="button" class="btn btn-primary"   (click)="manual.login(this.email,this.password)">login</button>
 
       </div>
       <br><br>
