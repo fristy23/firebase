@@ -12,7 +12,6 @@ import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
 
 
-
 const routes: Routes = [
   {
     path: 'tabs',
@@ -66,7 +65,34 @@ const routes: Routes = [
 
   
   },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'admin-login',
+    loadChildren: () => import('./admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
+  },
+  {
+    path: 'employee',
+    loadChildren: () => import('./adminPages/employee/employee.module').then( m => m.EmployeePageModule)
+  },
+  {
+    path: 'user',
+    loadChildren: () => import('./adminPages/user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'vendors',
+    loadChildren: () => import('./adminPages/vendors/vendors.module').then( m => m.VendorsPageModule)
+  },
+  {
+    path: 'banners',
+    loadChildren: () => import('./adminPages/banners/banners.module').then( m => m.BannersPageModule)
+  },
  
+
+
+
   
  
 ];

@@ -25,7 +25,10 @@ export class LandingheaderComponent  implements OnInit {
     this.router.navigate(['/tab3']);
   }
   button(){
-    this.router.navigate(['/button']);
+    this.router.navigate(['/dashboard']);
+  }
+  adminlogin(){
+    this.router.navigate(['/admin-login']);
   }
  
 

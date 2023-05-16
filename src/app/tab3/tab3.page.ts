@@ -18,6 +18,7 @@ export class Tab3Page {
   constructor( public manual:FirebaseService,private router:Router) {
 
     manual.login(this.email,this.password)
+    this.router.navigate(['/admin-login']);
   }
   
 
