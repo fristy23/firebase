@@ -12,6 +12,7 @@ import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
 
 
+
 const routes: Routes = [
   {
     path: 'tabs',
@@ -62,9 +63,10 @@ const routes: Routes = [
   {
     path:'button',  
     component:ButtonComponent
-    
+
   
-  }
+  },
+ 
   
  
 ];
