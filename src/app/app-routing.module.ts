@@ -10,8 +10,6 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
-
-
 const routes: Routes = [
   {
     path: 'tabs',
@@ -64,7 +62,17 @@ const routes: Routes = [
     component:ButtonComponent
     
   
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'admin-login',
+    loadChildren: () => import('./admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
   }
+
+
   
  
 ];

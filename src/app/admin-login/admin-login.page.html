@@ -1,0 +1,38 @@
+
+
+<ion-content [fullscreen]="true">
+  <div class="all">
+
+    <div class="box">
+      <h1>Admin Login</h1>
+      <br>
+      <br>
+      <div class="text-field">
+     <div class="input-group mb-3">
+        <!-- <label for="">Email:-</label> -->
+        <br>
+        <input type="email" id="two" class="form-control" placeholder="Email"   aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <!-- <label for="">Password:-</label> -->
+        <br>
+        <input type="password" id="two" class="form-control" placeholder="password"  aria-label="password"
+          aria-describedby="basic-addon1">
+      </div>
+    </div>
+      <br><br>
+      <div class="button">
+        <button type="button" class="btn btn-primary" (click)="dashboard()">login</button>
+
+      </div>
+      <br><br>
+      <p id="para"><a routerLink="/tab1">Didn't have any account?</a></p>
+      <p> <a routerLink="#">Forget password</a></p>
+    </div>
+    
+    
+</div>
+
+</ion-content>

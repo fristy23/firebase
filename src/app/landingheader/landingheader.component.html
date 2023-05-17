@@ -10,6 +10,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#"></a>
         </li>
+        <li class="nav-item" id="navbar1">
+          <a class="nav-link" id="navbar1" routerLink="/HomePage">HOME</a>
+        </li>
        
         <li class="nav-item" id="navbar1">
           <button>{{btn.getButton('CONTACT')}}</button>
@@ -32,7 +35,7 @@
           <div class="dropdown">
             <button>LOGIN</button>
             <div class="dropdown-options">
-                <a (click)="button()">ADMIN LOGIN</a>
+                <a (click)="adminlogin()">ADMIN LOGIN</a>
                 <a (click)="login()">USER LOGIN </a>
             
                 
