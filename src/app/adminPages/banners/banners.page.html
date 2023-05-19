@@ -1,13 +1,73 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>banners</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">banners</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ 
+<div class="container">
+    
+  
+    
+  <h1>-Banners List</h1>
+      <button id="addBtn">+</button> 
+
+    <div class="search">
+      <label for="">Search</label>
+      <input type="text" id="searchLeft">
+    </div>
+    <label for="dog-names" id="dropLabel">Show entries</label>
+    <select name="entries" id="entries">
+        <option value="rigatoni">10</option>
+      <option value="dave">25</option>
+      <option value="pumpernickel">50</option>
+      <option value="reeses">75</option>
+      <option value="reeses">100</option>
+    </select>
+
+    <div class="table" >
+  
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" id="th1">Photo</th>
+            <th scope="col" id="th1">State</th>
+            <th scope="col" id="th1">City</th>
+            <th scope="col" id="th1">Timestamp</th>
+            <th scope="col" id="th1">Number</th>
+            <th scope="col" id="th1">Keyword</th>
+            <th scope="col" id="th1">Options</th>
+          
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <!-- <th scope="col" id="th1">Name</th>
+            <th scope="col" id="th1">age</th>
+            <th scope="col" id="th1">Last</th>
+            <th scope="col" id="th1">Handle</th> -->
+
+            <th scope="col" id="th1">Photo</th>
+            <th scope="col" id="th1">State</th>
+            <th scope="col" id="th1">City</th>
+            <th scope="col" id="th1">Timestamp</th>
+            <th scope="col" id="th1">Number</th>
+            <th scope="col" id="th1">Keyword</th>
+            <th scope="col" id="th1">Options</th>
+          
+      
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr *ngFor="let row of tableData" >
+            <td>{{ row.Number }}</td>
+            <td>{{ row.Name}}</td>
+            <td>{{ row.Status }}</td>
+            <td>{{ row.Gender}}</td>
+            <td>{{ row.Balance }}</td>
+            <td>{{ row.Cashback}}</td>
+            <td (click)="delete()">delete</td>
+          
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  
+</div>
 </ion-content>
