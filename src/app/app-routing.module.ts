@@ -11,7 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
 
-
+      
 const routes: Routes = [
   {
     path: 'tabs',
@@ -89,6 +89,32 @@ const routes: Routes = [
     path: 'banners',
     loadChildren: () => import('./adminPages/banners/banners.module').then( m => m.BannersPageModule)
   },
+
+  {
+    path: 'product',
+    loadChildren: () => import('./adminpages/product/product.module').then( m => m.ProductPageModule)
+  },
+  {
+    path: 'store',
+    loadChildren: () => import('./adminpages/store/store.module').then( m => m.StorePageModule)
+  },
+  {
+    path: 'account',
+    loadChildren: () => import('./adminpages/account/account.module').then( m => m.AccountPageModule)
+  },
+  {
+    path: 'recharge',
+    loadChildren: () => import('./adminpages/recharge/recharge.module').then( m => m.RechargePageModule)
+  },
+  {
+    path: 'transactions',
+    loadChildren: () => import('./adminpages/transactions/transactions.module').then( m => m.TransactionsPageModule)
+  },
+  {
+    path: 'orders',
+    loadChildren: () => import('./adminpages/orders/orders.module').then( m => m.OrdersPageModule)
+  },
+  
  
 
 
