@@ -15,5 +15,35 @@ export class DashboardPage implements OnInit {
   adminuser(){
     this.router.navigate(['/user']);
   }
+  adminemploye(){
+    this.router.navigate(['/employee']);
+  }
+  adminvendors(){
+    this.router.navigate(['/vendors']);
+  }
+  adminbanner(){
+    this.router.navigate(['/banners']);
+  }
+  adminproduct(){
+    this.router.navigate(["/product"]);
+  }
+  adminstore(){
+    this.router.navigate(["/store"]);
+  }
+  adminaccount(){
+    this.router.navigate(["/account"]);
+  }
+  adminrecharge(){
+    this.router.navigate(["/recharge"]);
+  }
+  admintransactions(){
+    this.router.navigate(["/transactions"]);
+  }
+   adminorders(){
+    this.router.navigate(["/orders"]);
+  }
+
+
+
 
 }

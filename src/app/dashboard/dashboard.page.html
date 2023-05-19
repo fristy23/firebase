@@ -12,8 +12,8 @@
           <div class="dropdown">
             <button>CLOTHES </button>
             <div class="dropdown-options">
-              <button (click)="adminuser()">Employee</button>
-                <a routerLink="/t-shirts">User</a>
+              <button (click)="adminemploye()">Employee</button>
+                <a routerLink="adminuser()">User</a>
                 <a routerLink="/sports">Vendors</a>
                 <a routerLink="/shirts">Store</a>
                 <a routerLink="/t-shirts">Product</a>
@@ -42,7 +42,7 @@
           <div class="dropdown">
             <button>Admin Profile</button>
             <div class="dropdown-options">
-                <a routerLink="/shirts">Employee</a>
+                <a routerLink="">Employee</a>
                 <a routerLink="/t-shirts">User</a>
                 <a routerLink="/sports">Vendors</a>
                 <a routerLink="/shirts">Store</a>
@@ -58,7 +58,7 @@
       <h3>Dashboard</h3>
       <h5>Welcome To Fristy</h5>
       <div class="boxes">
-       <div class="box" >Employee</div>
+       <div class="box" (click)="adminemploye()">Employee</div>
        <div class="box" (click)="adminuser()">Users</div>
        <div class="box">Vendors</div>
        <div class="box">Banners</div>
