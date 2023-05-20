@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
+import { AdminprofileComponent } from './adminprofile/adminprofile.component';
+import { OperstionsComponent } from './operstions/operstions.component';
 const routes: Routes = [
   {
     path: 'tabs',
@@ -70,6 +72,14 @@ const routes: Routes = [
   {
     path: 'admin-login',
     loadChildren: () => import('./admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
+  },
+  {
+    path:'adminprofile',
+    component:AdminprofileComponent
+  },
+  {
+    path:'operstions',
+    component:OperstionsComponent
   }
 
 
