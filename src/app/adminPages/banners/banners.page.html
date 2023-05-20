@@ -1,13 +1,112 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>banners</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">banners</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <section class="content home">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <ul class="breadcrumb float-md-right">
+                    <li class="breadcrumb-item"><a href="/admin/dashboard"><i class="zmdi zmdi-home"></i> Dashboard</a></li>
+                    <li class="breadcrumb-item active">Banners</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="alert-message"></div>
+        <!-- Basic Examples -->
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="header">
+                        <h2><strong>Banners</strong> List </h2>
+                        <ul class="header-dropdown">
+                            <li class="remove">
+                                <a role="button" href="/admin/banner/add-banner"><i class="zmdi zmdi-plus zmdi-hc-border"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                <thead>
+                                    <tr>
+                                        <th>Photo</th>
+                                        <th>State</th>
+                                        <th>City</th>
+                                        <th>Timestamp</th>
+                                        <th>Number</th>
+                                        <th>Keyword</th>
+                                        <th>Option</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>Photo</th>
+                                        <th>State</th>
+                                        <th>City</th>
+                                        <th>Timestamp</th>
+                                        <th>Number</th>
+                                        <th>Keyword</th>
+                                        <th>Option</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+<!--                                     
+                                    <tr>
+                                        <td>
+                                            <img class="rounded avatar" src="https://delivery-public-bucket.s3.ap-south-1.amazonaws.com/banner/1677319739873.jpg" alt="Banner" style="max-width: 100px;">
+                                        </td>
+                                        <td>Uttar Pradesh</td>
+                                        <td>Agra</td>
+                                        <td>2023-02-25 15:39:00</td>
+                                        <td>RU8ldwyNIyQRgJET9yx4G62AEnNdHY</td>
+                                        <td>mobile accessories</td>
+                                        <td>
+                                            <a id="banner-remove-form" href="#" onclick="removeBanner('/admin/banner/removeBanner?id=1')" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            <a id="banner-remove-form" href="/admin/banner/update-banner?id=1" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-edit"></i></a>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <img class="rounded avatar" src="https://delivery-public-bucket.s3.ap-south-1.amazonaws.com/banner/1677320458967.jpg" alt="Banner" style="max-width: 100px;">
+                                        </td>
+                                        <td>Uttar Pradesh</td>
+                                        <td>Agra</td>
+                                        <td>2023-02-25 15:50:59</td>
+                                        <td>Nothing selected</td>
+                                        <td></td>
+                                        <td>
+                                            <a id="banner-remove-form" href="#" onclick="removeBanner('/admin/banner/removeBanner?id=2')" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            <a id="banner-remove-form" href="/admin/banner/update-banner?id=2" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-edit"></i></a>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <img class="rounded avatar" src="https://delivery-public-bucket.s3.ap-south-1.amazonaws.com/banner/1677320524450.jpg" alt="Banner" style="max-width: 100px;">
+                                        </td>
+                                        <td>Uttar Pradesh</td>
+                                        <td>Agra</td>
+                                        <td>2023-02-25 15:52:04</td>
+                                        <td>Nothing selected</td>
+                                        <td>footwear</td>
+                                        <td>
+                                            <a id="banner-remove-form" href="#" onclick="removeBanner('/admin/banner/removeBanner?id=3')" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-delete"></i></a>
+                                            <a id="banner-remove-form" href="/admin/banner/update-banner?id=3" class="btn btn-default waves-effect waves-float waves-red"><i class="zmdi zmdi-edit"></i></a>
+                                        </td>
+                                    </tr> -->
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </ion-content>
