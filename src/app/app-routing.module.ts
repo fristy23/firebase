@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
-
+import { AddemployeeComponent } from './adminPages/addemployee/addemployee.component';
       
 const routes: Routes = [
   {
@@ -113,6 +113,10 @@ const routes: Routes = [
   {
     path: 'orders',
     loadChildren: () => import('./adminpages/orders/orders.module').then( m => m.OrdersPageModule)
+  },
+  {
+    path:'addemployee',
+    component:AddemployeeComponent
   },
   
  

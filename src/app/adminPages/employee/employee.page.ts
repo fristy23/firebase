@@ -21,4 +21,8 @@ export class EmployeePage implements OnInit {
     this.router.navigate(['/']);
   }
 
+  addemployee()
+  {
+    this.router.navigate(['/addemployee'])
+  }
 }
