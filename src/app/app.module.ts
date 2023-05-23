@@ -20,9 +20,12 @@ import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { LandingheaderComponent } from './landingheader/landingheader.component';
+import { StoreComponent } from './store/store.component';
+import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
+import { TransactionlistComponent } from './transactionlist/transactionlist.component';
 @NgModule({
-  declarations: [AppComponent,AddemployeeComponent
-    ,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
+  declarations: [AppComponent,AddemployeeComponent,AddcategorystoreComponent,TransactionlistComponent
+    ,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,StoreComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

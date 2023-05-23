@@ -11,6 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AddemployeeComponent } from './adminPages/addemployee/addemployee.component';
+import { StoreComponent } from './store/store.component';
+import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
+import { TransactionlistComponent } from './transactionlist/transactionlist.component';
       
 const routes: Routes = [
   {
@@ -94,10 +97,7 @@ const routes: Routes = [
     path: 'product',
     loadChildren: () => import('./adminpages/product/product.module').then( m => m.ProductPageModule)
   },
-  {
-    path: 'store',
-    loadChildren: () => import('./adminpages/store/store.module').then( m => m.StorePageModule)
-  },
+  
   {
     path: 'account',
     loadChildren: () => import('./adminpages/account/account.module').then( m => m.AccountPageModule)
@@ -118,8 +118,19 @@ const routes: Routes = [
     path:'addemployee',
     component:AddemployeeComponent
   },
+  {
+    path: "store",
+    component:StoreComponent
+  },
+  {
+  path: "addcategorystore",
+  component:AddcategorystoreComponent
   
- 
+  },
+  {
+  path:"transactionlist",
+  component:TransactionlistComponent
+  }
 
 
 
