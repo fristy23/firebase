@@ -20,6 +20,7 @@ import { AddbannerComponent } from './addbanner/addbanner.component';
 import { FinalbannerComponent } from './finalbanner/finalbanner.component';
 import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
 import { AddemployeeComponent } from './adminPages/addemployee/addemployee.component';
+import { EmployeePage } from './adminPages/employee/employee.page';
       
 const routes: Routes = [
   {
@@ -123,8 +124,6 @@ const routes: Routes = [
     path: 'user',
     loadChildren: () => import('./adminPages/user/user.module').then( m => m.UserPageModule)
   },
- 
-
   {
     path:'addemployee',
     component:AddemployeeComponent

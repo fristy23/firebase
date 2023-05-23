@@ -31,14 +31,14 @@
               <th scope="col" id="th1">Last</th>
               <th scope="col" id="th1">Handle</th> -->
 
-              <th scope="col" id="th1">Number</th>
-              <th scope="col" id="th1">Name</th>
               <th scope="col" id="th1">Username</th>
-              <th scope="col" id="th1">Gender</th>
+              <th scope="col" id="th1">First name</th>
+              <th scope="col" id="th1">Last name</th>
               <th scope="col" id="th1">Email</th>
-              <th scope="col" id="th1">Status</th>
-              <th scope="col" id="th1">Role</th>
+              <th scope="col" id="th1">Number</th>
+              
               <th scope="col" id="th1">Register Date</th>
+              <th scope="col" id="th1">Option</th>
             </tr>
           </thead>
           <tfoot>
@@ -48,31 +48,33 @@
               <th scope="col" id="th1">Last</th>
               <th scope="col" id="th1">Handle</th> -->
 
-              <th scope="col" id="th1">Number</th>
-              <th scope="col" id="th1">Name</th>
               <th scope="col" id="th1">Username</th>
-              <th scope="col" id="th1">Gender</th>
+              <th scope="col" id="th1">First name</th>
+              <th scope="col" id="th1">Last name</th>
               <th scope="col" id="th1">Email</th>
-              <th scope="col" id="th1">Status</th>
-              <th scope="col" id="th1">Role</th>
-              <th scope="col" id="th1">Register Date</th>
+              <th scope="col" id="th1">Number</th>
+              
+              <th scope="col" id="th1">Date</th>
+              <th scope="col" id="th1">Option</th>
             </tr>
           </tfoot>
           <tbody>
-            <tr *ngFor="let row of tableData">
-              <td>{{ row.Number }}</td>
-              <td>{{ row.Name}}</td>
-              <td>{{ row.Status }}</td>
-              <td>{{ row.Gender}}</td>
-              <td>{{ row.Balance }}</td>
-              <td>{{ row.Cashback}}</td>
-              <td>{{ row.Role }}</td>
-              <td>{{ row.ReferId}}</td>
+            <tr >
+              <td>{{userName}}</td>
+              <td>{{firstName}}</td>
+              <td>{{lastName}}</td>
+              <td>{{Email}}</td>
+              <td>{{Number}}</td>
+              <td>{{Date}}</td>
+              <td><i class="fa-solid fa-trash" (click)="delete()" style="color: #5919b8;" ></i><br><i class="fa-regular fa-pen-to-square"  style="color: #631868;"></i></td>
+          
             </tr>
             
           </tbody>
         </table>
+       
       </div>
+   
     </div>
   </div>
 </ion-content>
