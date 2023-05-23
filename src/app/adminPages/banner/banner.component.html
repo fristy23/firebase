@@ -44,19 +44,17 @@
             <th scope="col" id="th1">Number</th>
             <th scope="col" id="th1">Keyword</th>
             <th scope="col" id="th1">Options</th>
-          
-      
           </tr>
         </tfoot>
         <tbody>
           <tr >
-            <td>{{city}}</td>
-           
+            <td>{{ photo }}</td>
             <td>{{ state }}</td>
-            <!-- <td>{{ Gender}}</td>
-            <td>{{ Balance }}</td>
-            <td>{{ Cashback}}</td> -->
-            <td><i class="fa-solid fa-trash" style="color: #5919b8;" (click)="delete()"></i><br><i class="fa-regular fa-pen-to-square" routerLink="/editbanner" (click)="deletebanner()" style="color: #631868;"></i></td>
+            <td>{{ city }}</td>
+            <td>{{ Timestamp }}</td>
+            <td>{{ Number }}</td>
+            <td>{{ keyword }}</td>
+            <td><i class="fa-solid fa-trash" style="color: #5919b8;"  (click)="deletebanner()"></i><br><i class="fa-regular fa-pen-to-square"  (click)="deletebanner()" style="color: #631868;"></i></td>
           
           </tr>
           

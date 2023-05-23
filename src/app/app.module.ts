@@ -27,6 +27,7 @@ import { EditbannerComponent } from './editbanner/editbanner.component';
 import { LandingheaderComponent } from './landingheader/landingheader.component';
 import { FinalbannerComponent } from './finalbanner/finalbanner.component';
 import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
+
 @NgModule({
   declarations: [AppComponent,AdminprofileComponent,OperstionsComponent,AddemployeeComponent,AddfinalbannerComponent,AdmindashboardComponent,BannerComponent,ButtonComponent,LandingheaderComponent,EditbannerComponent,FinalbannerComponent,
     AddbannerComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],

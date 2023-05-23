@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AddbannerComponent } from 'src/app/addbanner/addbanner.component';
-import { AsyncAction } from 'rxjs/internal/scheduler/AsyncAction';
-import { getDatabase } from "firebase/database";
 import { doc, getDoc, getFirestore,deleteDoc, updateDoc, deleteField  } from "firebase/firestore";
-
 const db = getFirestore();
 @Component({
   selector: 'app-banner',
@@ -15,8 +12,10 @@ export class BannerComponent implements OnInit {
   userdata: any = "";
   city = "";
   state="";
-  
-
+  photo="";
+  Timestamp="";
+  Number="";
+  keyword="";
   constructor(private router: Router, private addbanner: AddbannerComponent) {
    this.show();
    }
@@ -28,7 +27,7 @@ export class BannerComponent implements OnInit {
   
   async show() 
   {
-   const docRef = doc(db, "banner", "ZkyDbZBnaP9EDFgYzR0h");
+   const docRef = doc(db, "banner", "BUH40n7fmqwFWbbIcg4y");
    const docSnap = await getDoc(docRef);
 
    if (docSnap.exists()) {
@@ -42,16 +41,15 @@ export class BannerComponent implements OnInit {
   
  }
  async deletebanner(){
-  await deleteDoc(doc(db, "banner", "ZkyDbZBnaP9EDFgYzR0h"));
+  await deleteDoc(doc(db, "banner", "BUH40n7fmqwFWbbIcg4y"));
   console.log("delete");
  }
 
  async delete(){
-  const docRef = doc(db, "banner", " ZkyDbZBnaP9EDFgYzR0h");
+  const docRef = doc(db, "banner", " BUH40n7fmqwFWbbIcg4y");
   await updateDoc(docRef, {
     capital: deleteField()
   });
  }
- 
 }
 
