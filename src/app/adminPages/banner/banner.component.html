@@ -1,0 +1,68 @@
+
+<div class="container">  
+  <h1>-Banners List</h1>
+      <button id="addBtn" (click)="addfinalbanner()">+</button> 
+    <div class="search">
+      <label for="">Search</label>
+      <input type="text" id="searchLeft">
+    </div>
+    <label for="dog-names" id="dropLabel">Show entries</label>
+    <select name="entries" id="entries">
+        <option value="rigatoni">10</option>
+      <option value="dave">25</option>
+      <option value="pumpernickel">50</option>
+      <option value="reeses">75</option>
+      <option value="reeses">100</option>
+    </select>
+
+    <div class="table" >
+  
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" id="th1">Photo</th>
+            <th scope="col" id="th1">State</th>
+            <th scope="col" id="th1">City</th>
+            <th scope="col" id="th1">Timestamp</th>
+            <th scope="col" id="th1">Number</th>
+            <th scope="col" id="th1">Keyword</th>
+            <th scope="col" id="th1">Options</th>
+          
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <!-- <th scope="col" id="th1">Name</th>
+            <th scope="col" id="th1">age</th>
+            <th scope="col" id="th1">Last</th>
+            <th scope="col" id="th1">Handle</th> -->
+
+            <th scope="col" id="th1">Photo</th>
+            <th scope="col" id="th1">State</th>
+            <th scope="col" id="th1">City</th>
+            <th scope="col" id="th1">Timestamp</th>
+            <th scope="col" id="th1">Number</th>
+            <th scope="col" id="th1">Keyword</th>
+            <th scope="col" id="th1">Options</th>
+          
+      
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr >
+            <td>{{city}}</td>
+           
+            <td>{{ state }}</td>
+            <!-- <td>{{ Gender}}</td>
+            <td>{{ Balance }}</td>
+            <td>{{ Cashback}}</td> -->
+            <td><i class="fa-solid fa-trash" style="color: #5919b8;" (click)="delete()"></i><br><i class="fa-regular fa-pen-to-square" routerLink="/editbanner" (click)="deletebanner()" style="color: #631868;"></i></td>
+          
+          </tr>
+          
+        </tbody>
+      </table>
+      <ion-button color="danger" (click)="show()">Show</ion-button>
+    </div>
+  
+</div>

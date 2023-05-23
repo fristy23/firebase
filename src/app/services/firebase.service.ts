@@ -58,7 +58,7 @@ export class FirebaseService {
 
 
       });
-      this.add(user,email,password);
+//      this.add(user,email,password);
   }
 
   login(email:any,password:any)
@@ -103,18 +103,4 @@ const auth = getAuth();
 
   }
 
-  async add(user:string,email:any,password:any) {
-    try {
-      const db = getFirestore();
-      const docRef = await addDoc(collection(db, "users"), {
-        user:user,
-        Email:email,
-        password:password
-        
-      });
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
-  }
 }

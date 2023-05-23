@@ -19,7 +19,7 @@ export class AdminLoginPage implements OnInit {
     this.router.navigate(['/tab3']);
   }
   dashboard(){
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/admindashboard']);
   }
 
 }

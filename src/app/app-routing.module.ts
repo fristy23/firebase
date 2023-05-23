@@ -10,6 +10,15 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
+import { AdminprofileComponent } from './adminprofile/adminprofile.component';
+import { OperstionsComponent } from './operstions/operstions.component';
+import { UserPageModule } from './adminPages/user/user.module';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { BannerComponent } from './adminPages/banner/banner.component';
+import { EditbannerComponent } from './editbanner/editbanner.component';
+import { AddbannerComponent } from './addbanner/addbanner.component';
+import { FinalbannerComponent } from './finalbanner/finalbanner.component';
+import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
 import { AddemployeeComponent } from './adminPages/addemployee/addemployee.component';
 import { StoreComponent } from './store/store.component';
 import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
@@ -68,15 +77,44 @@ const routes: Routes = [
 
   
   },
-  {
-    path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
-  },
+ 
   {
     path: 'admin-login',
     loadChildren: () => import('./admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
   },
   {
+    path:'adminprofile',
+    component:AdminprofileComponent
+  },
+  {
+    path:'operstions',
+    component:OperstionsComponent
+  },
+  {
+    path:'user',
+    component:UserPageModule,
+  },
+  {
+    path:'admindashboard',
+    component:AdmindashboardComponent
+  },
+  {
+    path:'banner',
+    component:BannerComponent
+  },
+  {
+    path:'addbanner',
+    component:AddbannerComponent
+  },
+  {
+    path:'finalbanner',
+    component:FinalbannerComponent
+  },
+  {
+    path:'addfinalbanner',
+    component:AddfinalbannerComponent
+  },{
+    
     path: 'employee',
     loadChildren: () => import('./adminPages/employee/employee.module').then( m => m.EmployeePageModule)
   },
@@ -84,36 +122,8 @@ const routes: Routes = [
     path: 'user',
     loadChildren: () => import('./adminPages/user/user.module').then( m => m.UserPageModule)
   },
-  {
-    path: 'vendors',
-    loadChildren: () => import('./adminPages/vendors/vendors.module').then( m => m.VendorsPageModule)
-  },
-  {
-    path: 'banners',
-    loadChildren: () => import('./adminPages/banners/banners.module').then( m => m.BannersPageModule)
-  },
+ 
 
-  {
-    path: 'product',
-    loadChildren: () => import('./adminpages/product/product.module').then( m => m.ProductPageModule)
-  },
-  
-  {
-    path: 'account',
-    loadChildren: () => import('./adminpages/account/account.module').then( m => m.AccountPageModule)
-  },
-  {
-    path: 'recharge',
-    loadChildren: () => import('./adminpages/recharge/recharge.module').then( m => m.RechargePageModule)
-  },
-  {
-    path: 'transactions',
-    loadChildren: () => import('./adminpages/transactions/transactions.module').then( m => m.TransactionsPageModule)
-  },
-  {
-    path: 'orders',
-    loadChildren: () => import('./adminpages/orders/orders.module').then( m => m.OrdersPageModule)
-  },
   {
     path:'addemployee',
     component:AddemployeeComponent
@@ -125,17 +135,11 @@ const routes: Routes = [
   {
   path: "addcategorystore",
   component:AddcategorystoreComponent
-  
   },
-  {
-  path:"transactionlist",
+{
+  path:'transaction',
   component:TransactionlistComponent
-  }
-
-
-
-  
- 
+} 
 ];
 @NgModule({
   imports: [

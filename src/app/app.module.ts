@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 import { Tab3Page } from './tab3/tab3.page';
-import { ButtonComponent } from './components/button/button.component';
-   
+import { ButtonComponent } from './components/button/button.component';  
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AddemployeeComponent } from './adminPages/addemployee/addemployee.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BannerComponent } from './adminPages/banner/banner.component';
+import { AddbannerComponent } from './addbanner/addbanner.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { HeaderComponent } from './header/header.component';
@@ -16,16 +18,20 @@ import { Banner1Component } from './banner1/banner1.component';
 import { Banner2Component } from './banner2/banner2.component';
 import { ItemsComponent } from './items/items.component';
 import { BrandsComponent } from './brands/brands.component';
+import { OperstionsComponent } from './operstions/operstions.component';
 import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
+import { EditbannerComponent } from './editbanner/editbanner.component';
 import { LandingheaderComponent } from './landingheader/landingheader.component';
-import { StoreComponent } from './store/store.component';
-import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
 import { TransactionlistComponent } from './transactionlist/transactionlist.component';
+import { FinalbannerComponent } from './finalbanner/finalbanner.component';
+import { AdminprofileComponent } from './adminprofile/adminprofile.component';
+import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
+import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
 @NgModule({
-  declarations: [AppComponent,AddemployeeComponent,AddcategorystoreComponent,TransactionlistComponent
-    ,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,StoreComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
+  declarations: [AppComponent,AddfinalbannerComponent,FinalbannerComponent,AddcategorystoreComponent,AdmindashboardComponent,AdminprofileComponent,AddbannerComponent,BannerComponent,AddemployeeComponent,TransactionlistComponent,OperstionsComponent,EditbannerComponent
+    ,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
