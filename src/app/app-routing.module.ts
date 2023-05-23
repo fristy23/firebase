@@ -19,6 +19,8 @@ import { EditbannerComponent } from './editbanner/editbanner.component';
 import { AddbannerComponent } from './addbanner/addbanner.component';
 import { FinalbannerComponent } from './finalbanner/finalbanner.component';
 import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
+import { AddemployeeComponent } from './adminPages/addemployee/addemployee.component';
+      
 const routes: Routes = [
   {
     path: 'tabs',
@@ -112,7 +114,24 @@ const routes: Routes = [
   {
     path:'addfinalbanner',
     component:AddfinalbannerComponent
-  }
+  },{
+    
+    path: 'employee',
+    loadChildren: () => import('./adminPages/employee/employee.module').then( m => m.EmployeePageModule)
+  },
+  {
+    path: 'user',
+    loadChildren: () => import('./adminPages/user/user.module').then( m => m.UserPageModule)
+  },
+ 
+
+  {
+    path:'addemployee',
+    component:AddemployeeComponent
+  },
+  
+ 
+
 
   
  
