@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 import { Tab3Page } from './tab3/tab3.page';
-import { ButtonComponent } from './components/button/button.component';
-import { AdminprofileComponent } from './adminprofile/adminprofile.component';   
+import { ButtonComponent } from './components/button/button.component';  
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AddemployeeComponent } from './adminPages/addemployee/addemployee.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,12 +24,14 @@ import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { EditbannerComponent } from './editbanner/editbanner.component';
 import { LandingheaderComponent } from './landingheader/landingheader.component';
+import { TransactionlistComponent } from './transactionlist/transactionlist.component';
 import { FinalbannerComponent } from './finalbanner/finalbanner.component';
+import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
-
+import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
 @NgModule({
-  declarations: [AppComponent,AdminprofileComponent,OperstionsComponent,AddemployeeComponent,AddfinalbannerComponent,AdmindashboardComponent,BannerComponent,ButtonComponent,LandingheaderComponent,EditbannerComponent,FinalbannerComponent,
-    AddbannerComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
+  declarations: [AppComponent,AddfinalbannerComponent,FinalbannerComponent,AddcategorystoreComponent,AdmindashboardComponent,AdminprofileComponent,AddbannerComponent,BannerComponent,AddemployeeComponent,TransactionlistComponent,OperstionsComponent,EditbannerComponent
+    ,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

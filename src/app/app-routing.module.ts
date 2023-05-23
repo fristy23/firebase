@@ -20,7 +20,9 @@ import { AddbannerComponent } from './addbanner/addbanner.component';
 import { FinalbannerComponent } from './finalbanner/finalbanner.component';
 import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
 import { AddemployeeComponent } from './adminPages/addemployee/addemployee.component';
-import { EmployeePage } from './adminPages/employee/employee.page';
+import { StoreComponent } from './store/store.component';
+import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
+import { TransactionlistComponent } from './transactionlist/transactionlist.component';
       
 const routes: Routes = [
   {
@@ -101,10 +103,6 @@ const routes: Routes = [
     component:BannerComponent
   },
   {
-    path:'editbanner',
-    component:EditbannerComponent
-  },
-  {
     path:'addbanner',
     component:AddbannerComponent
   },
@@ -128,12 +126,18 @@ const routes: Routes = [
     path:'addemployee',
     component:AddemployeeComponent
   },
-  
- 
-
-
-  
- 
+  {
+    path: "store",
+    component:StoreComponent
+  },
+  {
+  path: "addcategorystore",
+  component:AddcategorystoreComponent
+  },
+{
+  path:'transaction',
+  component:TransactionlistComponent
+} 
 ];
 @NgModule({
   imports: [
