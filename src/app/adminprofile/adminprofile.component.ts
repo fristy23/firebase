@@ -9,8 +9,7 @@ import { Router } from '@angular/router';
 export class AdminprofileComponent  implements OnInit {
 
   constructor(private router:Router) { 
-    // this.router.navigate(['/dashboard']);
-    // this.router.navigate(['/adminprofile']);
+   
   }
 
   ngOnInit() {}

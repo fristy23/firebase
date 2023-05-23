@@ -1,0 +1,46 @@
+ <div class="row-12">
+  
+  <div class="col-9">
+    <h1>ADD BANNER</h1>
+    <label for="" > Select Image</label><br>
+    <input type="file" (change)="img($event)" alt="Submit" width="48" height="48" id="space">
+    <label for="state"  >Choose a state:</label><br>
+    <select name="state" (change)="bstate($event)"><br>
+      <option value="UP">Uttar Pradesh</option>
+      <option value="MP">Madhya Pradesh</option>
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Kerala">Kerala</option>
+    </select><br >
+    <label for="City" id="city" >Choose a City:</label>
+    <br>
+    <select name="City" (change)="bcity($event)">
+      <option value="agra">Agra</option>
+      <option value="Aligarh">Aligarh</option>
+      <option value="firozabad">firozabad</option>
+      <option value="shikhoabad">shikhoabad</option>
+    </select>
+    
+    <br>
+    <label for="KEYWORD" id="city">KEYWORD:</label>
+    <br>
+    <select (change)="bkeyword($event)">
+      <option value="Mobile accessories" id="space">Mobile accessories</option>
+      <option value="Sports" id="space">Sports</option>
+    </select>
+    
+    <br>
+    <br>
+    <label for="select vendor" id="city" >Select Vender:</label>
+    <br>
+   <select name="vendor" (change)="bvendor($event)">
+      <option value="Sakshi Mobile World -sakshi(7817031828)"> Sakshi Mobile World -sakshi(7817031828)</option>
+      <option value="D-MART">D-Mart</option>
+      <option value="D-MART">Adidas</option>
+    </select>
+    <br>
+     <label id="city"> <input type="checkbox" > I have read and accept term</label>
+     <br>
+     <ion-button color="danger" (click)="add()">Submit</ion-button>
+  </div>
+ </div>
+

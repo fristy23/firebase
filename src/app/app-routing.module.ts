@@ -12,6 +12,13 @@ import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import { OperstionsComponent } from './operstions/operstions.component';
+import { UserPageModule } from './adminPages/user/user.module';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { BannerComponent } from './adminPages/banner/banner.component';
+import { EditbannerComponent } from './editbanner/editbanner.component';
+import { AddbannerComponent } from './addbanner/addbanner.component';
+import { FinalbannerComponent } from './finalbanner/finalbanner.component';
+import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
 const routes: Routes = [
   {
     path: 'tabs',
@@ -62,13 +69,10 @@ const routes: Routes = [
   {
     path:'button',  
     component:ButtonComponent
-    
+
   
   },
-  {
-    path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
-  },
+ 
   {
     path: 'admin-login',
     loadChildren: () => import('./admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
@@ -80,8 +84,35 @@ const routes: Routes = [
   {
     path:'operstions',
     component:OperstionsComponent
+  },
+  {
+    path:'user',
+    component:UserPageModule,
+  },
+  {
+    path:'admindashboard',
+    component:AdmindashboardComponent
+  },
+  {
+    path:'banner',
+    component:BannerComponent
+  },
+  {
+    path:'editbanner',
+    component:EditbannerComponent
+  },
+  {
+    path:'addbanner',
+    component:AddbannerComponent
+  },
+  {
+    path:'finalbanner',
+    component:FinalbannerComponent
+  },
+  {
+    path:'addfinalbanner',
+    component:AddfinalbannerComponent
   }
-
 
   
  

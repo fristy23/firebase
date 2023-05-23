@@ -1,0 +1,114 @@
+
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    
+    <div class="fields">
+      <p>User List<a>(Clear)</a></p>
+    <label for="" class="label">From :</label>
+   
+    <input type="text" id="text">
+      <label for="" id="label-to">To</label>
+      <input type="text" id="text">
+      <button >Search</button>
+      <br><br>
+      <label for="" class="label">Number(10 digit) : </label>
+      <input type="text" id="text" class="digit">
+      <button id="btn">Search</button>
+      <br><br>
+      <label for="" class="label">Email : </label>
+      <input type="text" id="text" class="email">
+      <button id="btn">Search</button>
+      <br><br>
+
+
+      <label for="dog-names" id="dropLabel">Show entries</label>
+      <select name="entries" id="entries">
+          <option value="rigatoni">10</option>
+        <option value="dave">25</option>
+        <option value="pumpernickel">50</option>
+        <option value="reeses">75</option>
+        <option value="reeses">100</option>
+      </select>
+         
+
+      <div class="search">
+        <label for="">Search</label>
+        <input type="text" id="searchLeft">
+      </div>
+
+      <div class="table">
+        <!-- <table border="1">
+          <tfoot>
+          <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Status</th>
+          </tr>
+        </tfoot>
+         <tbody>
+          <tr >
+            <td>1</td>
+            <td>yash</td>
+            <td>india</td>
+          </tr>
+        </tbody>
+        </table> -->
+
+        <!-- <table border="1">
+          <thead>
+            <tr>
+              <th scope="col">Number</th>
+              <th scope="col">Name</th>
+              <th>Status</th>
+              <th>Gender</th>
+              <th>Balance</th>
+              <th>Cashback</th>
+              <th>Role</th>
+              <th>Refer id</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of tableData">
+              <td>{{ row.name }}</td>
+              <td>{{ row.age }}</td>
+            </tr>
+          </tbody>
+        </table> -->
+
+        
+          <thead>
+            <tr>
+              <!-- <th scope="col" id="th1">Name</th>
+              <th scope="col" id="th1">age</th>
+              <th scope="col" id="th1">Last</th>
+              <th scope="col" id="th1">Handle</th> -->
+
+              <th scope="col" id="th1">Number</th>
+              <th scope="col" id="th1">Name</th>
+              <th scope="col" id="th1">Status</th>
+              <th scope="col" id="th1">Gender</th>
+              <th scope="col" id="th1">Balance</th>
+              <th scope="col" id="th1">Cashback</th>
+              <th scope="col" id="th1">Role</th>
+              <th scope="col" id="th1">ReferId</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of tableData">
+              <td>{{ row.Number }}</td>
+              <td>{{ row.Name}}</td>
+              <td>{{ row.Status }}</td>
+              <td>{{ row.Gender}}</td>
+              <td>{{ row.Balance }}</td>
+              <td>{{ row.Cashback}}</td>
+              <td>{{ row.Role }}</td>
+              <td>{{ row.ReferId}}</td>
+            </tr>
+            
+          </tbody>
+        
+      </div>
+    </div>
+  </div>
+</ion-content>

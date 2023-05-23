@@ -4,7 +4,7 @@ import { getAuth,signInWithPopup, createUserWithEmailAndPassword, signOut,Google
 import {EmailService} from 'src/app/services/authgoogle.service';
 import { Router } from '@angular/router';
 import {FirebaseService} from 'src/app/services/firebase.service';
-
+import {User} from 'src/app/services/user'
 
 // const provider = new GoogleAuthProvider();
 @Component({

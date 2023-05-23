@@ -7,7 +7,9 @@ import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import { OperstionsComponent } from './operstions/operstions.component';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
-
+import { BannerComponent } from './adminPages/banner/banner.component';
+import { AddbannerComponent } from './addbanner/addbanner.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,9 +22,13 @@ import { BrandsComponent } from './brands/brands.component';
 import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
+import { EditbannerComponent } from './editbanner/editbanner.component';
 import { LandingheaderComponent } from './landingheader/landingheader.component';
+import { FinalbannerComponent } from './finalbanner/finalbanner.component';
+import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
 @NgModule({
-  declarations: [AppComponent,AdminprofileComponent,OperstionsComponent,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
+  declarations: [AppComponent,EditbannerComponent,AddfinalbannerComponent,FinalbannerComponent,AddbannerComponent,BannerComponent,EditbannerComponent,AdmindashboardComponent,OperstionsComponent,AdminprofileComponent
+    ,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
