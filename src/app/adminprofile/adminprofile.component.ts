@@ -13,5 +13,11 @@ export class AdminprofileComponent  implements OnInit {
   }
 
   ngOnInit() {}
+  employee(){
+    this.router.navigate(['/employee']);
+  }
+  user(){
+    this.router.navigate(['/user']);
+  }
 
 }

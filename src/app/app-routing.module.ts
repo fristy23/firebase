@@ -12,7 +12,7 @@ import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import { OperstionsComponent } from './operstions/operstions.component';
-import { UserPageModule } from './adminPages/user/user.module';
+
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { BannerComponent } from './adminPages/banner/banner.component';
 import { EditbannerComponent } from './editbanner/editbanner.component';
@@ -20,6 +20,18 @@ import { AddbannerComponent } from './addbanner/addbanner.component';
 import { FinalbannerComponent } from './finalbanner/finalbanner.component';
 import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
 import { AddemployeeComponent } from './adminPages/addemployee/addemployee.component';
+import { StoreComponent } from './store/store.component';
+import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
+import { TransactionlistComponent } from './transactionlist/transactionlist.component';
+import { VendorComponent } from './vendor/vendor.component';
+import { OrderComponent } from './order/order.component';
+import { FinalemployeeComponent } from './finalemployee/finalemployee.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { UserComponent } from './user/user.component';
+import { FinaluserComponent } from './finaluser/finaluser.component';
+import { FinalvendorComponent } from './finalvendor/finalvendor.component';
+import { FinaltransactionComponent } from './finaltransaction/finaltransaction.component';
+import { FinalorderComponent } from './finalorder/finalorder.component';
       
 const routes: Routes = [
   {
@@ -84,13 +96,22 @@ const routes: Routes = [
     component:AdminprofileComponent
   },
   {
+    path:'finalemployee',
+    component:FinalemployeeComponent
+  },
+  {
+    path:'order',
+    component:OrderComponent
+  },
+  {
+    path:'vendor',
+    component:VendorComponent
+  },
+  {
     path:'operstions',
     component:OperstionsComponent
   },
-  {
-    path:'user',
-    component:UserPageModule,
-  },
+
   {
     path:'admindashboard',
     component:AdmindashboardComponent
@@ -98,10 +119,6 @@ const routes: Routes = [
   {
     path:'banner',
     component:BannerComponent
-  },
-  {
-    path:'editbanner',
-    component:EditbannerComponent
   },
   {
     path:'addbanner',
@@ -114,27 +131,48 @@ const routes: Routes = [
   {
     path:'addfinalbanner',
     component:AddfinalbannerComponent
-  },{
-    
-    path: 'employee',
-    loadChildren: () => import('./adminPages/employee/employee.module').then( m => m.EmployeePageModule)
   },
-  {
-    path: 'user',
-    loadChildren: () => import('./adminPages/user/user.module').then( m => m.UserPageModule)
-  },
- 
 
   {
     path:'addemployee',
     component:AddemployeeComponent
   },
-  
- 
-
-
-  
- 
+  {
+    path: "store",
+    component:StoreComponent
+  },
+  {
+    path:'user',
+    component:UserComponent
+  },
+  {
+    path:'finaluser',
+    component:FinaluserComponent
+  },
+  {
+    path:'finalorder',
+    component:FinalorderComponent
+  },
+{
+  path:'transactionlist',
+  component:TransactionlistComponent
+} ,
+{
+  path:'finaltransaction',
+  component:FinaltransactionComponent
+},
+{
+  path:'addcategorystore',
+  component:AddcategorystoreComponent
+},
+{
+  path:'employee',
+  component:EmployeeComponent
+},
+{
+  path:'finalvendor',
+  component:FinalvendorComponent
+}
 ];
 @NgModule({
   imports: [

@@ -10,6 +10,8 @@ import { FirebaseService } from 'src/app/services/firebase.service';
 })
 export class EmailService {
 
+  sharedValue: any;
+
   constructor() {
     
   

@@ -1,12 +1,14 @@
 <section class="home">
 <div class="box">
   <label for="">- ADD EMPLOYEE</label><br><br><br>
-  <input type="text"class="textFields" placeholder="Username"><br><br>
-  <input type="text" class="textFields"placeholder="Enter first name"><br><br>
-  <input type="text" class="textFields"placeholder="Enter first name"><br><br>
-  <input type="text" class="textFields"placeholder="Enter last name"><br><br>
-  <input type="text" class="textFields"placeholder="Email"><br><br>
-  <input type="text" class="textFields"placeholder="Number"><br><br>
+  <input type="text"class="textFields" id="user" (change)="userField($event)"  placeholder="Username"><br><br>
+  <input type="text" class="textFields" (change)="Fname($event)" placeholder="Enter first name"><br><br>
+  <input type="text" class="textFields" (change)="Lname($event)" placeholder="Enter last name"><br><br>
+ 
+  <input type="text" class="textFields" (change)="EmailField($event)" placeholder="Email"><br><br>
+  <input type="text" class="textFields" (change)="PhoneField($event)" placeholder="Number"><br><br>
+  <input type="date" class="textFields" (change)="DateField($event)">
+  <br><br>
   <select class="textFields">  
     <option>Not Selected</option>  
     <option>Sub Admin</option>  
@@ -15,8 +17,6 @@
     <option>Category Management</option>  
     <option>Account Management</option>  
     <option>Other Management</option>  
-
-    
 </select> 
 <br><br>
 <label for="" class="gender">Gender :</label>
@@ -105,4 +105,5 @@
      </ion-radio-group>
 
 </div>
+<button (click)="add()">submit</button>
 </section>

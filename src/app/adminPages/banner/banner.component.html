@@ -1,5 +1,5 @@
 
-<div class="container">  
+<div class="container" >  
   <h1>-Banners List</h1>
       <button id="addBtn" (click)="addfinalbanner()">+</button> 
     <div class="search">
@@ -47,20 +47,23 @@
           </tr>
         </tfoot>
         <tbody>
-          <tr >
-            <td>{{ photo }}</td>
-            <td>{{ state }}</td>
-            <td>{{ city }}</td>
-            <td>{{ Timestamp }}</td>
-            <td>{{ Number }}</td>
-            <td>{{ keyword }}</td>
+          <tr *ngFor="let i of collectbannerdata" >
+            <td>{{i.photo}}</td>
+            <td>{{i.state}}</td> 
+            <td>{{i.state}}</td>
+            <td>{{i.city}}</td>
+            <td>{{timestamp}}<td>
+            
+           
             <td><i class="fa-solid fa-trash" style="color: #5919b8;"  (click)="deletebanner()"></i><br><i class="fa-regular fa-pen-to-square"  (click)="deletebanner()" style="color: #631868;"></i></td>
           
-          </tr>
+            </tr>
           
         </tbody>
       </table>
-      <ion-button color="danger" (click)="show()">Show</ion-button>
+      
+      <ion-button color="danger" (click)="alldocument()">document</ion-button>
+   
     </div>
   
 </div>

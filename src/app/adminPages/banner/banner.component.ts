@@ -1,23 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AddbannerComponent } from 'src/app/addbanner/addbanner.component';
-import { doc, getDoc, getFirestore,deleteDoc, updateDoc, deleteField  } from "firebase/firestore";
+import { doc, getDoc,getDocs,Timestamp,collection, getFirestore,deleteDoc, updateDoc, deleteField  } from "firebase/firestore";
+import { timeStamp } from 'console';
+//import { AddbannerComponent } from 'src/app/addbanner/addbanner.component';
 const db = getFirestore();
+
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.scss'],
 })
 export class BannerComponent implements OnInit {
+ 
+  collectbannerdata:any=[this.alldocument()];
   userdata: any = "";
-  city = "";
+  city ="";
   state="";
   photo="";
-  Timestamp="";
+  timestamp=Timestamp.fromDate(new Date("may 24,2023"));
   Number="";
   keyword="";
+  
   constructor(private router: Router, private addbanner: AddbannerComponent) {
-   this.show();
+  //  this.show();
+      this.alldocument()
+      
    }
 
   ngOnInit() { }
@@ -27,9 +35,10 @@ export class BannerComponent implements OnInit {
   
   async show() 
   {
-   const docRef = doc(db, "banner", "BUH40n7fmqwFWbbIcg4y");
+   const docRef = doc(collection(db, "banner"), "BeoKqzlNHIJGSls0asWa");
+   console.log(docRef);
    const docSnap = await getDoc(docRef);
-
+   console.log("collection",docSnap.data());
    if (docSnap.exists()) {
      console.log("Document data:", docSnap.data());
      this.userdata = docSnap.data()
@@ -40,13 +49,26 @@ export class BannerComponent implements OnInit {
    }
   
  }
+ async  alldocument()
+ {
+  console.log("alldocument");
+  var list:any=[];
+const querySnapshot = await getDocs(collection(db, "banner"));
+querySnapshot.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  //console.log(doc.id, " => ", doc.data());
+  list.push(doc.data())
+});
+this.collectbannerdata = list;
+console.log(this.collectbannerdata)
+ }
  async deletebanner(){
-  await deleteDoc(doc(db, "banner", "BUH40n7fmqwFWbbIcg4y"));
+  await deleteDoc(doc(db, "banner", "BeoKqzlNHIJGSls0asWa  "));
   console.log("delete");
  }
 
  async delete(){
-  const docRef = doc(db, "banner", " BUH40n7fmqwFWbbIcg4y");
+  const docRef = doc(db, "banner", " BeoKqzlNHIJGSls0asWa  ");
   await updateDoc(docRef, {
     capital: deleteField()
   });
