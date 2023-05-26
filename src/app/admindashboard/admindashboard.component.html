@@ -1,19 +1,25 @@
 <div class="row-12">
-  <div class="adminheader">
-    <div class="col-3">
-      <h1 id="logo">Fristy</h1>
+  <div class="up">
+    <h1 id="logo">FRISTY</h1>
+    <div class="AdminImg">
       <input type="image" class="img" src="assets/img/usericon.png" alt="img" height="48" width="48">
+    </div>
+  </div>
+  <div class="adminheader">
 
-      <h6 id="admin">Admin</h6>
+    <h6 id="admin">ADMIN</h6>
+    <ion-item-divider>
+    </ion-item-divider>
 
+    <div class="col-3">
       <hr>
-      <h6 style="color:#e2e6ee;">--MAIN</h6>
+    
       <div class="dropdown">
         <button class="iconbtn" style="color:white;"><i class="fa-solid fa-house-chimney" style=" color: #f7f7f8; "
             id="dashboard"></i>DashBoard </button>
         <div class="dropdown-options">
           <a (click)="employee()">Employee</a>
-          <a routerLink="/t-shirts">User</a>
+          <a >User</a>
           <a routerLink="/sports">Vendors</a>
           <a routerLink="/shirts">Store</a>
           <a routerLink="/t-shirts">Product</a>
@@ -50,8 +56,6 @@
     </div>
 
   </div>
-
-
-
+ 
 
 </div>

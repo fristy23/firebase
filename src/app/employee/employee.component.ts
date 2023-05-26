@@ -3,6 +3,8 @@ import { doc, getDoc } from "firebase/firestore";
 import { Router } from '@angular/router';
 import { getFirestore } from "firebase/firestore";
 import {deleteDoc, updateDoc, deleteField  } from "firebase/firestore";
+import { getDocs,Timestamp,collection, } from "firebase/firestore";
+import { timeStamp } from 'console';
 
 const db = getFirestore();
 @Component({
@@ -13,7 +15,7 @@ const db = getFirestore();
 export class EmployeeComponent  implements OnInit {
 
   constructor( private router:Router) {
-    this.show()
+    this.read()
    }
 employeeData:any=""
 userName=""
@@ -58,5 +60,17 @@ if (docSnap.exists()) {
     console.log("delete");
    }
   
-
+   async  read()
+   {
+    console.log("alldocument");
+    var list:any=[];
+  const querySnapshot = await getDocs(collection(db, "employee"));
+  querySnapshot.forEach((doc) => {
+    // doc.data() is never undefined for query doc snapshots
+    //console.log(doc.id, " => ", doc.data());
+    list.push(doc.data())
+  });
+  this.employeeData = list;
+  
+   }
 }

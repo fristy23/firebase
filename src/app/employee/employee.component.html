@@ -1,80 +1,80 @@
 
 
 
-  <div class="container">
+<div class="container">
     
-    <div class="fields">
-      <p id="para">Employee List<a>(Clear)</a></p>
-    
-        <button id="addBtn" (click)="addemployee()">+</button> 
+  <div class="fields">
+    <p id="para">Employee List<a>(Clear)</a></p>
+  
+      <button id="addBtn" (click)="addemployee()">+</button> 
 
-      <div class="search">
-        <label for="">Search</label>
-        <input type="text" id="searchLeft">
-      </div>
-      <label for="dog-names" id="dropLabel">Show entries</label>
-      <select name="entries" id="entries">
-          <option value="rigatoni">10</option>
-        <option value="dave">25</option>
-        <option value="pumpernickel">50</option>
-        <option value="reeses">75</option>
-        <option value="reeses">100</option>
-      </select>
-
-      <div class="table" >
-    
-        <table class="table table-bordered">
-          <thead>
-            <tr >
-              <!-- <th scope="col" id="th1">Name</th>
-              <th scope="col" id="th1">age</th>
-              <th scope="col" id="th1">Last</th>
-              <th scope="col" id="th1">Handle</th> -->
-
-              <th scope="col" id="th1">Username</th>
-              <th scope="col" id="th1">First name</th>
-              <th scope="col" id="th1">Last name</th>
-              <th scope="col" id="th1">Email</th>
-              <th scope="col" id="th1">Number</th>
-              
-              <th scope="col" id="th1">Register Date</th>
-              <th scope="col" id="th1">Option</th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <!-- <th scope="col" id="th1">Name</th>
-              <th scope="col" id="th1">age</th>
-              <th scope="col" id="th1">Last</th>
-              <th scope="col" id="th1">Handle</th> -->
-
-              <th scope="col" id="th1">Username</th>
-              <th scope="col" id="th1">First name</th>
-              <th scope="col" id="th1">Last name</th>
-              <th scope="col" id="th1">Email</th>
-              <th scope="col" id="th1">Number</th>
-              
-              <th scope="col" id="th1">Date</th>
-              <th scope="col" id="th1">Option</th>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr >
-              <td>{{userName}}</td>
-              <td>{{firstName}}</td>
-              <td>{{lastName}}</td>
-              <td>{{Email}}</td>
-              <td>{{Number}}</td>
-              <td>{{Date}}</td>
-              <td><i class="fa-solid fa-trash" (click)="delete()" style="color: #5919b8;" ></i><br><i class="fa-regular fa-pen-to-square"  style="color: #631868;"></i></td>
-          
-            </tr>
-            
-          </tbody>
-        </table>
-       
-      </div>
-   
+    <div class="search">
+      <label for="">Search</label>
+      <input type="text" id="searchLeft">
     </div>
+    <label for="dog-names" id="dropLabel">Show entries</label>
+    <select name="entries" id="entries">
+        <option value="rigatoni">10</option>
+      <option value="dave">25</option>
+      <option value="pumpernickel">50</option>
+      <option value="reeses">75</option>
+      <option value="reeses">100</option>
+    </select>
+
+    <div class="table" >
+  
+      <table class="table table-bordered">
+        <thead>
+          <tr >
+            <!-- <th scope="col" id="th1">Name</th>
+            <th scope="col" id="th1">age</th>
+            <th scope="col" id="th1">Last</th>
+            <th scope="col" id="th1">Handle</th> -->
+
+            <th scope="col" id="th1">Username</th>
+            <th scope="col" id="th1">First name</th>
+            <th scope="col" id="th1">Last name</th>
+            <th scope="col" id="th1">Email</th>
+            <th scope="col" id="th1">Number</th>
+            
+            <th scope="col" id="th1">Register Date</th>
+            <th scope="col" id="th1">Option</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <!-- <th scope="col" id="th1">Name</th>
+            <th scope="col" id="th1">age</th>
+            <th scope="col" id="th1">Last</th>
+            <th scope="col" id="th1">Handle</th> -->
+
+            <th scope="col" id="th1">Username</th>
+            <th scope="col" id="th1">First name</th>
+            <th scope="col" id="th1">Last name</th>
+            <th scope="col" id="th1">Email</th>
+            <th scope="col" id="th1">Number</th>
+            
+            <th scope="col" id="th1">Date</th>
+            <th scope="col" id="th1">Option</th>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr *ngFor="let i of employeeData">
+            <td>{{i.userName}}</td>
+            <td>{{i.firstName}}</td>
+            <td>{{i.lastName}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.Number}}</td>
+            <td>{{i.Date}}</td>
+            <td><i class="fa-solid fa-trash" (click)="delete()" style="color: #5919b8;" ></i><br><i class="fa-regular fa-pen-to-square"  style="color: #631868;"></i></td>
+        
+          </tr>
+          
+        </tbody>
+      </table>
+     
+    </div>
+ 
   </div>
+</div>
 
