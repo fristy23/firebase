@@ -1,17 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { getStorage, ref } from "firebase/storage";
 import { AddbannerComponent } from 'src/app/addbanner/addbanner.component';
 import { doc, getDoc,getDocs,Timestamp,collection, getFirestore,deleteDoc, updateDoc, deleteField  } from "firebase/firestore";
 import { timeStamp } from 'console';
 //import { AddbannerComponent } from 'src/app/addbanner/addbanner.component';
 const db = getFirestore();
-
+const storage = getStorage();
+const pathReference = ref(storage, 'img/about.jpg');
+  const gsReference = ref(storage, 'gs://fristy-fd454.appspot.com/Screenshot (1).png');
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.scss'],
 })
+
 export class BannerComponent implements OnInit {
+  
  
   collectbannerdata:any=[this.alldocument()];
   userdata: any = "";
@@ -21,11 +26,13 @@ export class BannerComponent implements OnInit {
   timestamp=Timestamp.fromDate(new Date("may 24,2023"));
   Number="";
   keyword="";
-  
+  img:any="";
+  blobImageSrc="gs://fristy-fd454.appspot.com/Screenshot (4).png";
   constructor(private router: Router, private addbanner: AddbannerComponent) {
   //  this.show();
       this.alldocument()
       
+      // this.loadblobimage();s
    }
 
   ngOnInit() { }
@@ -68,10 +75,15 @@ console.log(this.collectbannerdata)
  }
 
  async delete(){
-  const docRef = doc(db, "banner", " BeoKqzlNHIJGSls0asWa  ");
+  const docRef = doc (db, "banner", " BeoKqzlNHIJGSls0asWa  ");
   await updateDoc(docRef, {
     capital: deleteField()
   });
  }
+loadimg(){
+  this.img=gsReference;
+  console.log(this.img);
+  console.log("path",pathReference);
+}
 }
 

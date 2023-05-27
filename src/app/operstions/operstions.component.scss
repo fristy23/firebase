@@ -1,6 +1,7 @@
 .row-12{
   display: flex;
- 
+ overflow: scroll;
+
   
 }
 .col-3{
@@ -9,4 +10,7 @@
 .col-9{
   margin-left: 5px;
   width:70vw;
+}
+ion-content{
+  overflow: scroll;
 }

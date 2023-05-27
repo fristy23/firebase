@@ -1,6 +1,7 @@
 
 <div class="container" >  
   <h1>-Banners List</h1>
+  <ion-button color="danger" (click)="loadimg()">Img</ion-button>
       <button id="addBtn" (click)="addfinalbanner()">+</button> 
     <div class="search">
       <label for="">Search</label>
@@ -32,11 +33,6 @@
         </thead>
         <tfoot>
           <tr>
-            <!-- <th scope="col" id="th1">Name</th>
-            <th scope="col" id="th1">age</th>
-            <th scope="col" id="th1">Last</th>
-            <th scope="col" id="th1">Handle</th> -->
-
             <th scope="col" id="th1">Photo</th>
             <th scope="col" id="th1">State</th>
             <th scope="col" id="th1">City</th>
@@ -48,13 +44,11 @@
         </tfoot>
         <tbody>
           <tr *ngFor="let i of collectbannerdata" >
-            <td>{{i.photo}}</td>
+          <td><img src="{{this.img}}" alt="img"></td>
             <td>{{i.state}}</td> 
-            <td>{{i.state}}</td>
             <td>{{i.city}}</td>
             <td>{{timestamp}}<td>
-            
-           
+              <td>{{1}}</td>
             <td><i class="fa-solid fa-trash" style="color: #5919b8;"  (click)="deletebanner()"></i><br><i class="fa-regular fa-pen-to-square"  (click)="deletebanner()" style="color: #631868;"></i></td>
           
             </tr>
