@@ -1,12 +1,14 @@
-.container{
-    // height: 100vh;
-   
+#id{
+
 }
 .fields{
     display: inline-block;
     margin-top:30px ;
     width: 65vw;
   border: 1px solid black;
+}
+.second{
+  color: #55ccfe;
 }
  
 #addBtn{
@@ -60,17 +62,19 @@ button{
     width:300px;
   }
   #dropLabel{
-
+    color: #55ccfe;
     margin-left: 20px;
     margin-right: 20px;
   }
   #entries{
     border:none;
+    color: #55ccfe;
     background-color: transparent;
     border-bottom: 1px solid black;
   }
   .search{
     text-align: end;
+    color: #55ccfe;
   }
   #searchLeft{
 
@@ -82,8 +86,16 @@ button{
   }
   #th1{
     padding-right:25px ;
+    border-style: solid;
+    border-width: 5px ;
+    border-color: #55ccfe;
+    color:#55ccfe;
   }
 
   .table{
     margin-top: 20px;
+    
+  }
+  h1{
+    color: #55ccfe;
   }

@@ -1,6 +1,7 @@
 .container{
     // height: 100vh;
-  
+    
+
 }
 .fields{
     display: inline-block;
@@ -12,10 +13,11 @@
 #addBtn{
     background-color: transparent;
     font-size: 20px;
-    color:black;
-    border: 1px solid black;
+    color:#f33970;
+    border: 1px solid #f33970;
     margin-left: 60vw;
     margin-bottom: 50px;    
+    border-width: 3px;
 
 }
 .label{
@@ -60,17 +62,19 @@ button{
     width:300px;
   }
   #dropLabel{
-
+    color: #18FFFF;
     margin-left: 20px;
     margin-right: 20px;
   }
   #entries{
+    color: #18FFFF;
     border:none;
     background-color: transparent;
     border-bottom: 1px solid black;
   }
   .search{
     text-align: end;
+    color:#18FFFF;
   }
   #searchLeft{
 
@@ -82,10 +86,19 @@ button{
   }
   #th1{
     padding-right:15px ;
+    color:#55ccfe;
+    
+  }
+  h1{
+    color: #55ccfe;
   }
 
   .table{
     margin-top: 20px;
-    overflow-x:scroll;
-    overflow-y: scroll;
+    border-color: #f33970;
+    border-style: solid;
+    border-width: 5px;
+    color: #2e93d4;
+   
+   
   }

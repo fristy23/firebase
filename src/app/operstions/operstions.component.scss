@@ -1,13 +1,16 @@
 .row-12{
   display: flex;
- 
+
   
 }
 .col-3{
   width: 25vw;
 }
 .col-9{
-  padding-top: 40px;
-  
-  width:70vw;
+
+  margin-left:5px;
+  width:73.5vw;
+  // background-image:url("/assets/img/unnamed.png");
+   background-color:rgb(184, 223, 238);
+  background-size:cover;
 }
