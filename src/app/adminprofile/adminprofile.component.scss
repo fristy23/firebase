@@ -85,9 +85,9 @@
     display: inline-block;
     height: 130px;
     width: 250px;
-    background-color:white;
+    background-color:whitesmoke;
     color:black;
-    // border: 1px solid black;
+    border: 1px solid white;
   }
   .con{
   
@@ -95,13 +95,12 @@
     justify-content: end;
     // background-color:gray ;
   }
-//   #admin{
-//     margin-left: 70px;
-//     color:white;
-//     width: 100%;
-    
-  
-
+.con{
+ // background-image:url("/assets/3334896.jpg");
+ background-color: white;
+ // background-size: cover;
+}
 #dash{
-  color:white;
+  color:black;
+ // background-color: white;
 }
