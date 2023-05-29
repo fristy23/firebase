@@ -2,12 +2,12 @@
     display:inline-block;
     width: 27vw;
     background-image:url("/assets/3334896.jpg");
+    background-size:cover;
 }
   #logo{
-    width:100px;
+    width:150px;
     color: white;
-    text-align: center;
-    margin-left: 60px;
+    margin-left: 110px;
     font-size: 30px;
     margin-bottom: 20px;
   }
@@ -120,9 +120,12 @@
 }
 .img{
   border-radius: 100%;
-  margin-left: 70px;
+  margin-left: 110px;
   
   height:90px;
   width: auto;
 
+}
+.adminImg{
+  
 }
