@@ -6,6 +6,7 @@
     <input type="file" (change)="img($event)" alt="Submit" width="48" height="48" id="space">
     <label for="state"  >Choose a state:</label><br>
     <select name="state" (change)="bstate($event)"><br>
+      <option value="agra">Not selected</option>
       <option value="UP">Uttar Pradesh</option>
       <option value="MP">Madhya Pradesh</option>
       <option value="Chandigarh">Chandigarh</option>
@@ -14,6 +15,7 @@
     <label for="City" id="city" >Choose a City:</label>
     <br>
     <select name="City" (change)="bcity($event)">
+      <option value="agra">Not selected</option>
       <option value="agra">Agra</option>
       <option value="Aligarh">Aligarh</option>
       <option value="firozabad">firozabad</option>
@@ -24,6 +26,7 @@
     <label for="KEYWORD" id="city">KEYWORD:</label>
     <br>
     <select (change)="bkeyword($event)">
+      <option value="agra">Not selected</option>
       <option value="Mobile accessories" id="space">Mobile accessories</option>
       <option value="Sports" id="space">Sports</option>
     </select>
@@ -33,6 +36,7 @@
     <label for="select vendor" id="city" >Select Vender:</label>
     <br>
    <select name="vendor" (change)="bvendor($event)">
+    <option value="agra">Not selected</option>
       <option value="Sakshi Mobile World -sakshi(7817031828)"> Sakshi Mobile World -sakshi(7817031828)</option>
       <option value="D-MART">D-Mart</option>
       <option value="D-MART">Adidas</option>
@@ -40,7 +44,7 @@
     <br>
      <label id="city"> <input type="checkbox" > I have read and accept term</label>
      <br>
-     <ion-button color="danger" (click)="upload()" routerLink="/finalbanner">Submit</ion-button>
+     <ion-button color="danger" (click)="upload()" >Submit</ion-button>
   </div>
  </div>
 

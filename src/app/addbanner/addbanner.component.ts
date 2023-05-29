@@ -57,6 +57,7 @@ export class AddbannerComponent  implements OnInit {
   }
  
     async add() {
+      
       try {
         const db = getFirestore();
         const docRef = await addDoc(collection(db, "banner"), {
@@ -72,7 +73,7 @@ export class AddbannerComponent  implements OnInit {
         console.error("Error adding document: ", e);
       }
 
-      
+      window.alert("Success !")
     
   }
    
@@ -83,7 +84,12 @@ export class AddbannerComponent  implements OnInit {
   upload()
   {
     
- 
+ if(this.state=="" || this.city=="" || this.keyword=="" || this.vendor=="")
+ {
+     window.alert("please fill the details properly");
+ }
+ else{
+  console.log(this.city)
   /** @type {any} */
   const metadata = {
     contentType: 'image/jpg'
@@ -137,5 +143,6 @@ export class AddbannerComponent  implements OnInit {
   );
   
   this.add();
-  }  
+  }
+}  
 }
