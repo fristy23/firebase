@@ -41,7 +41,7 @@
         </tfoot>
         <tbody>
           <tr *ngFor="let i of collectbannerdata" >
-          <td><img src="{{this.img}}" alt="img"></td>
+          <td><img [src]="i.image" alt="img" ></td>
             <td>{{i.state}}</td> 
             <td>{{i.city}}</td>
             <td>{{timestamp}}<td>

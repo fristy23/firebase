@@ -14,7 +14,8 @@ const db=getFirestore();
   styleUrls: ['./addbanner.component.scss'],
 })
 export class AddbannerComponent  implements OnInit {
-  image=""
+  imgname=""
+   image="";
   state=""
   vendor=""
   keyword=""

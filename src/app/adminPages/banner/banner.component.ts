@@ -4,11 +4,11 @@ import { getStorage, ref } from "firebase/storage";
 import { AddbannerComponent } from 'src/app/addbanner/addbanner.component';
 import { doc, getDoc,getDocs,Timestamp,collection, getFirestore,deleteDoc, updateDoc, deleteField  } from "firebase/firestore";
 import { timeStamp } from 'console';
-//import { AddbannerComponent } from 'src/app/addbanner/addbanner.component';
+
 const db = getFirestore();
 const storage = getStorage();
 const pathReference = ref(storage, 'img/about.jpg');
-  const gsReference = ref(storage, 'gs://fristy-fd454.appspot.com/Screenshot (1).png');
+  const gsReference = ref(storage, 'https://firebasestorage.googleapis.com/v0/b/fristy-fd454.appspot.com/o/Screenshot%20(1).png?alt=media');
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
