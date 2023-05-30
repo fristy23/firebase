@@ -85,9 +85,9 @@
     display: inline-block;
     height: 130px;
     width: 250px;
-    background-color:transparent;
-    color:white;
-    border: 1px solid black;
+    background-color:whitesmoke;
+    color:black;
+    border: 1px solid white;
   }
   .con{
     display: flex;
@@ -95,9 +95,11 @@
     
   }
 .con{
-  background-image:url("/assets/3334896.jpg");
-  background-size: cover;
+ // background-image:url("/assets/3334896.jpg");
+ background-color: white;
+ // background-size: cover;
 }
 #dash{
-  color:white;
+  color:black;
+ // background-color: white;
 }
