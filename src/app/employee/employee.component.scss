@@ -4,7 +4,6 @@
     color:black;
     margin-top:30px ;
     width: 65vw;
-
 }
  
 #addBtn{
@@ -51,10 +50,10 @@ button{
   .digit{
     width:300px;
   }
-  .email{
-    margin-left: 89px;
-    width:300px;
-  }
+  // .email{
+  //   margin-left: 89px;
+  //   width:300px;
+  // }
   #dropLabel{
 
     margin-left: 20px;
@@ -81,9 +80,12 @@ button{
 
   .table{
     margin-top: 20px;
-   // border-color:wheat;
-    border-style: solid;
-    border-width: 5px;
-    color:black; 
+   border: none;
+   border:5px solid white;
+    
+   
     background-color: whitesmoke;
+  }
+  .blue{
+    color:blue;
   }

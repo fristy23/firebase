@@ -10,9 +10,10 @@
 
     <div class="search">
       <label for="">Search</label>
-      <input type="text" id="searchLeft">
+      <input type="text" (change)="Search($event)" id="searchLeft">
+      <button (click)="Search(null)">Search</button>
     </div>
-    <label for="dog-names" id="dropLabel">Show entries</label>
+    <label for="" id="dropLabel">Show entries</label>
     <select name="entries" id="entries">
         <option value="rigatoni">10</option>
       <option value="dave">25</option>

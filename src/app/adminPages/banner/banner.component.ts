@@ -27,7 +27,7 @@ export class BannerComponent implements OnInit {
   Number="";
   keyword="";
   img:any="";
-  blobImageSrc="gs://fristy-fd454.appspot.com/Screenshot (4).png";
+ 
   constructor(private router: Router, private addbanner: AddbannerComponent) {
   //  this.show();
       this.alldocument()

@@ -28,6 +28,8 @@
 .dropdown {
     // display: inline-block;
     position:relative;
+   width: 200px;
+   
   }
   
   button{
@@ -48,6 +50,7 @@
   // }
   
   .dropdown-options {
+    
     display: none;
     position:relative;
     overflow:scroll;
@@ -113,6 +116,7 @@
 } 
 #btnn{
   text-align:start;
+  margin-top: 20px;
   width:250px;
 }
 .col-3{
@@ -126,7 +130,4 @@
   height:90px;
   width: auto;
 
-}
-.adminImg{
-  
 }

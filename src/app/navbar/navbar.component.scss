@@ -34,8 +34,7 @@
     background-color: transparent;
     border:none;
     color:#ddd;
-    /* border-top:1px solid black ;
-    border-bottom:1px solid black ; */
+
     border-radius:0px;
     padding:10px 20px;
     font-size:15px;
@@ -48,7 +47,7 @@
   
   .dropdown-options {
     display: none;
-    position:fixed;
+    position:static;
     overflow: auto;
     background-color:gray;
     border-radius:5px;
