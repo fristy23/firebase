@@ -1,7 +1,7 @@
 
 <div class="container" >  
   <h1>-Banners List</h1>
-  <ion-button color="danger" (click)="loadimg()">Img</ion-button>
+  
       <button id="addBtn" (click)="addfinalbanner()">+</button> 
     <div class="search">
       <label for="">Search</label>
@@ -41,7 +41,7 @@
         </tfoot>
         <tbody>
           <tr *ngFor="let i of collectbannerdata" >
-          <td><img [src]="i.image" alt="img" ></td>
+          <td><img src="{{i.image}}" alt="img" width="50px"></td>
             <td>{{i.state}}</td> 
             <td>{{i.city}}</td>
             <td>{{timestamp}}<td>

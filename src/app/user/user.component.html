@@ -92,15 +92,11 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let row of tableData">
-              <td>{{ row.Number }}</td>
-              <td>{{ row.Name}}</td>
-              <td>{{ row.Status }}</td>
-              <td>{{ row.Gender}}</td>
-              <td>{{ row.Balance }}</td>
-              <td>{{ row.Cashback}}</td>
-              <td>{{ row.Role }}</td>
-              <td>{{ row.ReferId}}</td>
+            <tr *ngFor="let row of collectusersdata">
+              <td>{{ row.Email }}</td>
+              <td>{{ row.user}}</td>
+              <td>{{ row.password }}</td>
+           
             </tr>
             
           </tbody>

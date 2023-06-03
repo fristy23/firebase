@@ -32,6 +32,7 @@ import { FinaluserComponent } from './finaluser/finaluser.component';
 import { FinalvendorComponent } from './finalvendor/finalvendor.component';
 import { FinaltransactionComponent } from './finaltransaction/finaltransaction.component';
 import { FinalorderComponent } from './finalorder/finalorder.component';
+import { ContactComponent } from './contact/contact.component';
       
 const routes: Routes = [
   {
@@ -157,6 +158,10 @@ const routes: Routes = [
   path:'transactionlist',
   component:TransactionlistComponent
 } ,
+{
+  path:'contact',
+  component:ContactComponent
+},
 {
   path:'finaltransaction',
   component:FinaltransactionComponent

@@ -80,10 +80,10 @@ console.log(this.collectbannerdata)
     capital: deleteField()
   });
  }
-loadimg(){
-  this.img=gsReference;
-  console.log(this.img);
-  console.log("path",pathReference);
+
+
+
 }
-}
+
+
 

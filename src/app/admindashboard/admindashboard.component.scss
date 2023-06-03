@@ -1,12 +1,13 @@
 .row-12{
     display:inline-block;
     width: 27vw;
-    background-image:url("/assets/3334896.jpg");
+    
     background-size:cover;
+    background-color: white;
 }
   #logo{
     width:150px;
-    color: white;
+    color: black;
     margin-left: 110px;
     font-size: 30px;
     margin-bottom: 20px;
@@ -93,7 +94,7 @@
   }
   #admin{
     margin-left: 70px;
-    color:white;
+    color:black;
     width: 100%;
     font-size: 25px;
     
@@ -122,10 +123,7 @@
   border-radius: 100%;
   margin-left: 110px;
   
-  height:90px;
+  height:70px;
   width: auto;
 
-}
-.adminImg{
-  
 }

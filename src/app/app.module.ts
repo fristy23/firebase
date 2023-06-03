@@ -33,15 +33,18 @@ import { VendorComponent } from './vendor/vendor.component';
 import { FinaltransactionComponent } from './finaltransaction/finaltransaction.component';
 import { UserComponent } from './user/user.component';
 import { OrderComponent } from './order/order.component';
+
 import { FinalorderComponent } from './finalorder/finalorder.component';
 import { FinalvendorComponent } from './finalvendor/finalvendor.component';
 import { FinaluserComponent } from './finaluser/finaluser.component';
+import { ContactComponent } from './contact/contact.component';
 import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
 import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
-  declarations: [AppComponent,FinaluserComponent,FinalorderComponent,FinaltransactionComponent,FinalvendorComponent,UserComponent,FinalemployeeComponent,EmployeeComponent,AddcategorystoreComponent,OrderComponent,VendorComponent,AddfinalbannerComponent,FinalbannerComponent,AdmindashboardComponent,AdminprofileComponent,AddbannerComponent,BannerComponent,AddemployeeComponent,TransactionlistComponent,OperstionsComponent,EditbannerComponent
+  declarations: [AppComponent,FinaluserComponent,ContactComponent,FinalorderComponent,FinaltransactionComponent,FinalvendorComponent,UserComponent,FinalemployeeComponent,EmployeeComponent,AddcategorystoreComponent,OrderComponent,VendorComponent,AddfinalbannerComponent,FinalbannerComponent,AdmindashboardComponent,AdminprofileComponent,AddbannerComponent,BannerComponent,AddemployeeComponent,TransactionlistComponent,OperstionsComponent,EditbannerComponent
     ,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

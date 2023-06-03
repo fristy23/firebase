@@ -1,7 +1,7 @@
 
 .fields{
     display: inline-block;
-    color:#2e93d4;
+    color:black;
     margin-top:30px ;
     width: 65vw;
 
@@ -76,13 +76,14 @@ button{
   }
   #th1{
     padding-right:15px ;
-    color:#2e93d4;
+    color:black;
   }
 
   .table{
     margin-top: 20px;
-    border-color:#f33970;
+   // border-color:wheat;
     border-style: solid;
     border-width: 5px;
-    color: #55ccfe; 
+    color:black; 
+    background-color: whitesmoke;
   }
