@@ -1,3 +1,7 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
 .row-12{
     display:inline-block;
     width: 27vw;
@@ -6,11 +10,12 @@
     background-color: white;
 }
   #logo{
-    width:150px;
+    
     color: black;
-    margin-left: 110px;
+    // margin-left: 110px;S
     font-size: 30px;
-    margin-bottom: 20px;
+    
+    
   }
   h2{
     text-align: center;
@@ -126,4 +131,21 @@
   height:70px;
   width: auto;
 
+}
+.message{
+margin-bottom: 5px;
+margin-left: 1000px;
+}
+.headline{
+  display: flex;
+  justify-content:start;
+
+}
+
+.logoName{
+  margin-top:10px;
+}
+.noti{
+  margin-bottom: 5px;
+margin-left: 1200px;
 }

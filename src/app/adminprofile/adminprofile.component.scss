@@ -24,15 +24,23 @@
 
 }
 .color{
-  background-color:#00FFCA;
+  background-color:#00FFCA  ;
 }
 #card{
   width: 500px;
   height: 150px;
+
 }
 .boxes{
   display: flex;
   
+}
+#color{
+  background-color: #218dcb;
+  width: 300px;
+  height: 30px;
+  color: white;
+  text-align: center;
 }
 
 

@@ -1,11 +1,7 @@
-
-<div class="row-12">
-  <div class="row-3">
-    <app-admindashboard></app-admindashboard>
-  </div>
-  <div class="row-9">
-    <app-employee></app-employee>
-  </div>
-
-</div>
-
+<ion-grid [fixed]="true">
+  <ion-row>
+    <ion-col size="auto" id="col1">  <app-admindashboard></app-admindashboard></ion-col>
+   
+    <ion-col id="col2">   <app-employee></app-employee></ion-col>
+  </ion-row>
+</ion-grid>

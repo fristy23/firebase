@@ -1,7 +1,10 @@
  <div class="row-12">
+  
   <ion-app>
+   
     <ion-menu contentId="main-content">
       <ion-header>
+        
         <ion-toolbar color="tertiary">
           <ion-title>Menu</ion-title>
           <div class="AdminImg">
@@ -9,6 +12,7 @@
           </div>
         </ion-toolbar>
       </ion-header>
+
       <ion-content class="ion-padding">
         <ion-accordion-group>
           <ion-accordion value="first">
@@ -53,13 +57,25 @@
     </ion-menu>
     <div class="ion-page" id="main-content">
       <ion-header>
-        <ion-toolbar color="tertiary">
+        <ion-toolbar class="tool" color="tertiary">
            <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
-
-         
-          <ion-title>Fristy</ion-title>
+          <div class="headline">
+            <div class="logoName">
+              <ion-title >Fristy</ion-title>
+            </div>
+          <div class="msg">
+            <ion-button  class="message">
+              <ion-icon name="mail" id="mlogo" ></ion-icon>
+            </ion-button>
+          </div>
+          <div class="notification">
+            <ion-button  class="noti">
+              <ion-icon name="mail" id="mlogo" ></ion-icon>
+            </ion-button>
+          </div>
+        </div>
         </ion-toolbar>
       </ion-header>
       <ion-content class="ion-padding">

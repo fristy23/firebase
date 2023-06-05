@@ -1,62 +1,47 @@
-<div class="container">
-      <div class="fields">
-    <p id="para">Employee List<a>(Clear)</a></p>
-    <button id="addBtn" (click)="addemployee()">+</button> 
-  <div class="search">
-      <label for="">Search</label>
-      <input type="text" id="searchLeft">
+<ion-content class="ion-padding">
+  <h1>Employee List (Data)</h1>
+  <ion-button   (click)="addemployee()" >+</ion-button> 
+    <div class="search">
+      <ion-searchbar id="search"></ion-searchbar>
     </div>
-    <label for="dog-names" id="dropLabel">Show entries</label>
-    <select name="entries" id="entries">
-        <option value="rigatoni">10</option>
-      <option value="dave">25</option>
-      <option value="pumpernickel">50</option>
-      <option value="reeses">75</option>
-      <option value="reeses">100</option>
-    </select>
-    <div class="table" >
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col" id="th1">Username</th>
-            <th scope="col" id="th1">First name</th>
-            <th scope="col" id="th1">Last name</th>
-            <th scope="col" id="th1">Email</th>
-            <th scope="col" id="th1">Number</th>
-            
-            <th scope="col" id="th1">Register Date</th>
-            <th scope="col" id="th1">Option</th>
-          </tr>
-        </thead>
-        <tfoot>
-          <tr>
-            <th scope="col" id="th1">Username</th>
-            <th scope="col" id="th1">First name</th>
-            <th scope="col" id="th1">Last name</th>
-            <th scope="col" id="th1">Email</th>
-            <th scope="col" id="th1">Number</th>
-            
-            <th scope="col" id="th1">Date</th>
-            <th scope="col" id="th1">Option</th>
-          </tr>
-        </tfoot>
-        <tbody>
-          <tr *ngFor="let i of employeeData">
-            <td>{{i.userName}}</td>
-            <td>{{i.firstName}}</td>
-            <td>{{i.lastName}}</td>
-            <td>{{i.email}}</td>
-            <td>{{i.Number}}</td>
-            <td>{{i.Date}}</td>
-            <td><i class="fa-solid fa-trash" (click)="delete()" style="color: #5919b8;" ></i><br><i class="fa-regular fa-pen-to-square"  style="color: #631868;"></i></td>
-        
-          </tr>
-          
-        </tbody>
-      </table>
-     
-    </div>
- 
-  </div>
-</div>
-
+    <ion-accordion-group  id="Entries">
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light" >
+          <ion-label>Show Entries</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">10</div>
+        <div class="ion-padding" slot="content">20</div>
+        <div class="ion-padding" slot="content">30</div>
+        <div class="ion-padding" slot="content">40</div>
+      </ion-accordion>
+    </ion-accordion-group>
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-col id="label">Username</ion-col>
+        <ion-col id="label">Firstname</ion-col>
+        <ion-col id="label">Lastname</ion-col>
+        <ion-col id="label">Email</ion-col>
+        <ion-col id="label">Number</ion-col>
+        <ion-col id="label">Register Date</ion-col>
+        <ion-col id="label">Option</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let i of employeeData">
+        <ion-col id="data">{{i.userName}}</ion-col>
+        <ion-col id="data">{{i.firstName}}</ion-col>
+        <ion-col id="data">{{i.lastName}}</ion-col>
+        <ion-col id="data">{{i.email}}</ion-col>
+        <ion-col id="data">{{i.Number}}</ion-col>
+        <ion-col id="data">{{i.Data}}</ion-col>
+        <ion-col><td><i class="fa-solid fa-trash" (click)="delete()" style="color: #5919b8;" ></i><br><i class="fa-regular fa-pen-to-square"  style="color: #631868;"></i></td></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col  id="label">Username</ion-col>
+        <ion-col id="label">Firstname</ion-col>
+        <ion-col id="label">Lastname</ion-col>
+        <ion-col id="label">Email</ion-col>
+        <ion-col id="label">Number</ion-col>
+        <ion-col id="label">Register Date</ion-col>
+        <ion-col id="label">Option</ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>
