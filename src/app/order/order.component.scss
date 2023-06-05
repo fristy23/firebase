@@ -50,7 +50,7 @@ button{
   }
   
   button:hover{
-    background-color:#18FFFF;
+    background-color:white;
   }
   .digit{
     width:300px;
@@ -63,17 +63,17 @@ button{
 
     margin-left: 20px;
     margin-right: 20px;
-    color: #55ccfe;
+    color: black;
   }
   #entries{
     border:none;
     background-color: transparent;
     border-bottom: 1px solid black;
-    color:#55ccfe ;
+    color:black;
   }
   .search{
     text-align: end;
-    color:#55ccfe ;
+    color:black ;
   }
   #searchLeft{
 
@@ -89,11 +89,11 @@ button{
 
   .table{
     margin-top: 20px;
-    color: #55ccfe;
-    border-color: #f33970;
+    color: black;
+    border-color: white;
     border-width: 5px;
     border-style: solid;
   }
   h1{
-    color: #55ccfe;
+    color: black;
   }

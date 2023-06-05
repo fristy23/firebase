@@ -1,14 +1,8 @@
-
-
-
 <div class="container">
-    
-  <div class="fields">
+      <div class="fields">
     <p id="para">Employee List<a>(Clear)</a></p>
-  
-      <button id="addBtn" (click)="addemployee()">+</button> 
-
-    <div class="search">
+    <button id="addBtn" (click)="addemployee()">+</button> 
+  <div class="search">
       <label for="">Search</label>
       <input type="text" (change)="Search($event)" id="searchLeft">
       <button (click)="Search(null)">Search</button>
@@ -21,9 +15,7 @@
       <option value="reeses">75</option>
       <option value="reeses">100</option>
     </select>
-
     <div class="table" >
-  
       <table class="table table-bordered">
         <thead>
           <tr>

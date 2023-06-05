@@ -13,8 +13,8 @@
 #addBtn{
     background-color: transparent;
     font-size: 20px;
-    color:#f33970;
-    border: 1px solid #f33970;
+    color:black;
+    border: 1px solid black;
     margin-left: 60vw;
     margin-bottom: 50px;    
     border-width: 3px;
@@ -38,7 +38,7 @@ button{
     margin-left: 30px;
     background-color: transparent;
     border:none;
-    background-color: orangered;
+    background-color: black;
     color:#ddd;
     /* border-top:1px solid black ;
     border-bottom:1px solid black ; */
@@ -52,7 +52,7 @@ button{
   }
   
   button:hover{
-    background-color:#18FFFF;
+    background-color:whitesmoke;
   }
   .digit{
     width:300px;
@@ -62,19 +62,19 @@ button{
     width:300px;
   }
   #dropLabel{
-    color: #18FFFF;
+    color: black;
     margin-left: 20px;
     margin-right: 20px;
   }
   #entries{
-    color: #18FFFF;
+    color: black;
     border:none;
     background-color: transparent;
     border-bottom: 1px solid black;
   }
   .search{
     text-align: end;
-    color:#18FFFF;
+    color:black;
   }
   #searchLeft{
 
@@ -86,19 +86,19 @@ button{
   }
   #th1{
     padding-right:15px ;
-    color:#55ccfe;
+    color:black;
     
   }
   h1{
-    color: #55ccfe;
+    color: black;
   }
 
   .table{
     margin-top: 20px;
-    border-color: #f33970;
+    border-color: white;
     border-style: solid;
     border-width: 5px;
-    color: #2e93d4;
+    color: black;
    
    
   }

@@ -1,60 +1,72 @@
-<div class="row-12">
-  <div class="up">
-    <h1 id="logo">FRISTY</h1>
-    <div class="AdminImg">
-      <input type="image" class="img" src="assets/img/usericon.png" alt="img" height="48" width="48">
-    </div>
-  </div>
-  <div class="adminheader">
-
-    <h6 id="admin">ADMIN</h6>
-   
-
-    <div class="col-3">
-      <hr>
+ <div class="row-12">
+  <ion-app>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar color="tertiary">
+          <ion-title>Menu</ion-title>
+          <div class="AdminImg">
+            <input type="image" class="img" src="assets/img/usericon.png" alt="img" height="48" width="48">
+          </div>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-accordion-group>
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+              <i class="fa-solid fa-house-chimney" style="color: blue;"></i>
+              <ion-label>DashBoard </ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              <p> Employee</p>
+              <p> Vendors</p>
+              <p> Store</p>
+              <p> Product</p>
+              <p> Transactions</p>
+            </div>
+          </ion-accordion>
+          <ion-accordion value="second">
+            <ion-item slot="header" style="color: black;"> <i class="fa-brands fa-centos" style="color: blue;"></i>
+              <ion-label>Operations</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content"> <div class="ion-padding" slot="content">
+              <p>Events </p>
+              <p>Ads Banner</p>
+              <p>Qr Codes Maker</p>
+              <p> Api's Margin</p>
+              <p> Store Categories</p>
+              <p>Notification</p>
+            </div></div>
+          </ion-accordion>
+          <ion-accordion value="second">
+            <ion-item slot="header" color="light"><i class="fa-sharp fa-solid fa-lock" style="color: blue"></i>
+              <ion-label>Admin</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content"> <div class="ion-padding" slot="content">
+              <p>Profile</p>
+              <p>Change Password</p>
+             
+            </div></div>
+          </ion-accordion>
+        </ion-accordion-group>
     
-      <div class="dropdown">
-        <button   id="btnn" style="color:black;"><i class="fa-solid fa-house-chimney" style=" color: black "
-          ></i>DashBoard </button>
-        <div class="dropdown-options">
-          <a (click)="employee()">Employee</a>
-          <a >User</a>
-          <a routerLink="/sports">Vendors</a>
-          <a routerLink="/shirts">Store</a>
-          <a routerLink="/t-shirts">Product</a>
-          <a routerLink="/sports">Transactions</a>
-        </div>
-      </div>
+        </ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar color="tertiary">
+           <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
 
+         
+          <ion-title>Fristy</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <!-- <h6 id="admin">ADMIN</h6> -->
+        
 
-      <div class="dropdown">
-        <button style="color:black;" id="btnn"><i class="fa-brands fa-centos"
-            style="color: black;"></i>Operations</button>
-        <div class="dropdown-options">
-          <a routerLink="/shirts">Store Categories</a>
-          <a routerLink="/t-shirts">Events</a>
-          <a routerLink="/sports">Ads Banner</a>
-          <a routerLink="/shirts">Qr Codes Maker</a>
-          <a routerLink="/t-shirts">Api's Margin</a>
-          <a routerLink="/sports">Notification </a>
-        </div>
-      </div>
-
-
-      <div class="dropdown">
-        <button style="color:black;" id="btnn"><i class="fa-sharp fa-solid fa-lock" style="color: black;"></i>Admin
-          Profile</button>
-        <div class="dropdown-options">
-          <a routerLink="/shirts">Profile</a>
-          <a routerLink="/t-shirts">Change Password</a>
-
-        </div>
-      </div>
-
-
+      </ion-content>
     </div>
-
-  </div>
- 
-
-</div>
+  </ion-app>
+</div> 
