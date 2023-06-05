@@ -1,47 +1,38 @@
-<ion-content class="ion-padding">
-  <h1>Employee List (Data)</h1>
-  <ion-button   (click)="addemployee()" >+</ion-button> 
-    <div class="search">
-      <ion-searchbar id="search"></ion-searchbar>
-    </div>
-    <ion-accordion-group  id="Entries">
-      <ion-accordion value="first">
-        <ion-item slot="header" color="light" >
-          <ion-label>Show Entries</ion-label>
-        </ion-item>
-        <div class="ion-padding" slot="content">10</div>
-        <div class="ion-padding" slot="content">20</div>
-        <div class="ion-padding" slot="content">30</div>
-        <div class="ion-padding" slot="content">40</div>
-      </ion-accordion>
-    </ion-accordion-group>
-    <ion-grid [fixed]="true">
-      <ion-row>
-        <ion-col id="label">Username</ion-col>
-        <ion-col id="label">Firstname</ion-col>
-        <ion-col id="label">Lastname</ion-col>
-        <ion-col id="label">Email</ion-col>
-        <ion-col id="label">Number</ion-col>
-        <ion-col id="label">Register Date</ion-col>
-        <ion-col id="label">Option</ion-col>
-      </ion-row>
-      <ion-row *ngFor="let i of employeeData">
-        <ion-col id="data">{{i.userName}}</ion-col>
-        <ion-col id="data">{{i.firstName}}</ion-col>
-        <ion-col id="data">{{i.lastName}}</ion-col>
-        <ion-col id="data">{{i.email}}</ion-col>
-        <ion-col id="data">{{i.Number}}</ion-col>
-        <ion-col id="data">{{i.Data}}</ion-col>
-        <ion-col><td><i class="fa-solid fa-trash" (click)="delete()" style="color: #5919b8;" ></i><br><i class="fa-regular fa-pen-to-square"  style="color: #631868;"></i></td></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col  id="label">Username</ion-col>
-        <ion-col id="label">Firstname</ion-col>
-        <ion-col id="label">Lastname</ion-col>
-        <ion-col id="label">Email</ion-col>
-        <ion-col id="label">Number</ion-col>
-        <ion-col id="label">Register Date</ion-col>
-        <ion-col id="label">Option</ion-col>
-      </ion-row>
-    </ion-grid>
-</ion-content>
+    <ion-content class="ion-padding">
+      <h1>Employee List (Data)</h1>
+          <ion-button   (click)="addemployee()" >+</ion-button>
+        <div class="search">
+          <ion-searchbar id="search"></ion-searchbar>
+        </div>
+        <ion-accordion-group  id="Entries">
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light" >
+              <ion-label>Show Entries</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">10</div>
+            <div class="ion-padding" slot="content">20</div>
+            <div class="ion-padding" slot="content">30</div>
+            <div class="ion-padding" slot="content">40</div>
+          </ion-accordion>
+        </ion-accordion-group>
+        <ion-grid>
+          <ion-row>
+            <ion-col id= "tableheader">UserName</ion-col>
+            <ion-col id= "tableheader" >firstName</ion-col>
+            <ion-col id= "tableheader">LastName</ion-col>
+            <ion-col id= "tableheader">Email</ion-col>
+            <ion-col id= "tableheader">Number</ion-col> 
+            <ion-col id= "tableheader">Register Date</ion-col>
+            <ion-col id= "tableheader">option</ion-col>
+          </ion-row>
+          <ion-row *ngFor="let i of employeeData">
+            <ion-col>{{i.userName}}</ion-col>
+            <ion-col>{{i.firstName}}</ion-col>
+            <ion-col>{{i.lastName}}</ion-col>
+            <ion-col id="email">{{i.email}}</ion-col>
+            <ion-col>{{i.Number}}</ion-col>
+            <ion-col></ion-col>
+           <ion-col><i class="fa-sharp fa-solid fa-lock" style="color: rgb(10, 67, 146)"></i>
+           </ion-col> 
+          </ion-row> 
+        </ion-grid>    </ion-content>

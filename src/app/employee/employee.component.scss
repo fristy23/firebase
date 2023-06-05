@@ -1,4 +1,9 @@
-.ion{width: 60%;
+
+.fields{
+    display: inline-block;
+    color:black;
+    margin-top:30px ;
+    width: 65vw;
 
 }
  
@@ -82,3 +87,26 @@ button{
     color:black; 
     background-color: whitesmoke;
   }
+  .email{
+    width: 20px;
+  }
+  .lastname{
+    width:10px;
+  }
+  #data{
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+  }
+  #email{
+    width: 20px;
+  }
+  ion-col{
+    border:none;
+ 
+  }
+  #tableheader{
+    border: 2px solid ;
+       color: white;
+       background-color: #2e93d4;
+  }
+  ion-row:nth-child(even) {background-color:whitesmoke;}

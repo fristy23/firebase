@@ -33,6 +33,8 @@
 .dropdown {
     // display: inline-block;
     position:relative;
+   width: 200px;
+   
   }
   
   button{
@@ -53,6 +55,7 @@
   // }
   
   .dropdown-options {
+    
     display: none;
     position:relative;
     overflow:scroll;
@@ -118,6 +121,7 @@
 } 
 #btnn{
   text-align:start;
+  margin-top: 20px;
   width:250px;
 }
 .col-3{
@@ -145,7 +149,7 @@ margin-left: 1000px;
 .logoName{
   margin-top:10px;
 }
-.noti{
-  margin-bottom: 5px;
-margin-left: 1200px;
+.notif{
+margin-bottom: 5px;
+margin-left: 20px;
 }
