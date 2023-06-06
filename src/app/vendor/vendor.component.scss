@@ -99,3 +99,9 @@ button{
   h1{
     color: black;
   }
+  #tableheader{
+    border: 2px solid ;
+       color: white;
+       background-color: #2e93d4;
+  }
+  ion-row:nth-child(even) {background-color:whitesmoke;}
