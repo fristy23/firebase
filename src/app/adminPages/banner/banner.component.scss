@@ -102,3 +102,16 @@ button{
    
    
   }
+  #email{
+    width: 20px;
+  }
+  ion-col{
+    border:none;
+  
+  }
+  #tableheader{
+    border: 2px solid ;
+       color: white;
+       background-color: #2e93d4;
+  }
+  ion-row:nth-child(even) {background-color:whitesmoke;}

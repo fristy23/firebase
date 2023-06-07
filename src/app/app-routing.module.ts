@@ -33,6 +33,8 @@ import { FinalvendorComponent } from './finalvendor/finalvendor.component';
 import { FinaltransactionComponent } from './finaltransaction/finaltransaction.component';
 import { FinalorderComponent } from './finalorder/finalorder.component';
 import { ContactComponent } from './contact/contact.component';
+import { FinalstoreComponent } from './finalstore/finalstore.component';
+import { AccountComponent } from './account/account.component';
       
 const routes: Routes = [
   {
@@ -163,6 +165,10 @@ const routes: Routes = [
   component:ContactComponent
 },
 {
+  path:'finalstore',
+  component:FinalstoreComponent
+},
+{
   path:'finaltransaction',
   component:FinaltransactionComponent
 },
@@ -177,6 +183,11 @@ const routes: Routes = [
 {
   path:'finalvendor',
   component:FinalvendorComponent
+},
+{
+  path:'account',
+  component:AccountComponent
+
 }
 ];
 @NgModule({
