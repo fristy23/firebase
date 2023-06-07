@@ -1,22 +1,16 @@
-<div class="container">
+<ion-content>
   <h1>-Vendor List</h1>
-  <div class="second">
-    <div class="search">
-      <label for="">Search</label>
-      <input type="text" id="searchLeft">
-    </div>
-    <label for="dog-names" id="dropLabel">Show entries</label>
-    <select name="entries" id="entries">
-        <option value="rigatoni">10</option>
-      <option value="dave">25</option>
-      <option value="pumpernickel">50</option>
-      <option value="reeses">75</option>
-      <option value="reeses">100</option>
-    </select>
-  </div>
-
-    <div class="table" >
-  
+ 
+    <ion-searchbar></ion-searchbar>
+    <ion-item>
+      <ion-select label="Select Entries" label-placement="fixed" placeholder="Entries">
+        <ion-select-option value="10">10</ion-select-option>
+        <ion-select-option value="20">20</ion-select-option>
+        <ion-select-option value="30">30</ion-select-option>
+      </ion-select>
+    </ion-item>
+<!--   
+    <div class="table">
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -31,7 +25,8 @@
           </tr>
         </thead>
         <tfoot>
-          <tr><th scope="col" id="th1">Number</th>
+          <tr>
+            <th scope="col" id="th1">Number</th>
             <th scope="col" id="th1">Name</th>
             <th scope="col" id="th1">Store</th>
             <th scope="col" id="th1">Gender</th>
@@ -42,9 +37,21 @@
           </tr>
         </tfoot>
         <tbody>
-
         </tbody>
       </table>
-    </div> 
-</div>
+    </div> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col id= "tableheader">UserName</ion-col>
+        <ion-col id= "tableheader" >firstName</ion-col>
+        <ion-col id= "tableheader">LastName</ion-col>
+        <ion-col id= "tableheader">Email</ion-col>
+        <ion-col id= "tableheader">Number</ion-col> 
+        <ion-col id= "tableheader">Register Date</ion-col>
+        <ion-col id= "tableheader">option</ion-col>
+      </ion-row>
+      
+    </ion-grid> 
 
+    
+    </ion-content>
