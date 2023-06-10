@@ -11,6 +11,7 @@ import { AddbannerComponent } from './addbanner/addbanner.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
+import { AccountComponent } from './account/account.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -33,16 +34,20 @@ import { VendorComponent } from './vendor/vendor.component';
 import { FinaltransactionComponent } from './finaltransaction/finaltransaction.component';
 import { UserComponent } from './user/user.component';
 import { OrderComponent } from './order/order.component';
-
+import { FormsModule } from '@angular/forms';
+import { ProductComponent } from './adminPages/product/product.component';
+import { AddProductComponent } from './adminPages/add-product/add-product.component'; 
 import { FinalorderComponent } from './finalorder/finalorder.component';
 import { FinalvendorComponent } from './finalvendor/finalvendor.component';
 import { FinaluserComponent } from './finaluser/finaluser.component';
 import { ContactComponent } from './contact/contact.component';
 import { AddfinalbannerComponent } from './addfinalbanner/addfinalbanner.component';
 import { AddcategorystoreComponent } from './addcategorystore/addcategorystore.component';
+import { FinalstoreComponent } from './finalstore/finalstore.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StoreComponent } from './store/store.component';
 @NgModule({
-  declarations: [AppComponent,FinaluserComponent,ContactComponent,FinalorderComponent,FinaltransactionComponent,FinalvendorComponent,UserComponent,FinalemployeeComponent,EmployeeComponent,AddcategorystoreComponent,OrderComponent,VendorComponent,AddfinalbannerComponent,FinalbannerComponent,AdmindashboardComponent,AdminprofileComponent,AddbannerComponent,BannerComponent,AddemployeeComponent,TransactionlistComponent,OperstionsComponent,EditbannerComponent
+  declarations: [AppComponent,FinalstoreComponent, AddProductComponent,ProductComponent,AccountComponent,FinaluserComponent,StoreComponent,ContactComponent,FinalorderComponent,FinaltransactionComponent,FinalvendorComponent,UserComponent,FinalemployeeComponent,EmployeeComponent,AddcategorystoreComponent,OrderComponent,VendorComponent,AddfinalbannerComponent,FinalbannerComponent,AdmindashboardComponent,AdminprofileComponent,AddbannerComponent,BannerComponent,AddemployeeComponent,TransactionlistComponent,OperstionsComponent,EditbannerComponent
     ,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

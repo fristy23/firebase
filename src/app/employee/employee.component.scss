@@ -1,98 +1,3 @@
-
-.fields{
-    display: inline-block;
-    color:black;
-    margin-top:30px ;
-    width: 65vw;
-
-}
- 
-#addBtn{
-    background-color: transparent;
-    font-size: 20px;
-    color:#2e93d4;
-    border: 1px solid  #2e93d4;
-    margin-left: 60vw;
-    margin-bottom: 50px;    
-}
-.label{
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: large;
-}
-#text{
-    border-radius: 10px;
-}
-
-#label-to{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-button{
-    margin-left: 30px;
-    background-color: transparent;
-    border:none;
-    background-color: orangered;
-    color:#ddd;
-    /* border-top:1px solid black ;
-    border-bottom:1px solid black ; */
-    border-radius:0px;
-    padding:10px 20px;
-    font-size:15px;
-    cursor:pointer;
-  }
-  #btn{
-    margin-left:40px ;
-  }
-  
-  button:hover{
-    background-color:#18FFFF;
-  }
-  .digit{
-    width:300px;
-  }
-  .email{
-    margin-left: 89px;
-    width:300px;
-  }
-  #dropLabel{
-
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  #entries{
-    border:none;
-    background-color: transparent;
-    border-bottom: 1px solid black;
-  }
-  .search{
-    text-align: end;
-  }
-  #searchLeft{
-    border:none;
-    margin-left: 8px;
-    border-bottom:1px solid black ;
-   
-  }
-  #th1{
-    padding-right:15px ;
-    color:black;
-  }
-
-  .table{
-    margin-top: 20px;
-   // border-color:wheat;
-    border-style: solid;
-    border-width: 5px;
-    color:black; 
-    background-color: whitesmoke;
-  }
-  .email{
-    width: 20px;
-  }
-  .lastname{
-    width:10px;
-  }
   #data{
     border-left: solid 1px black;
     border-right: solid 1px black;
@@ -110,3 +15,8 @@ button{
        background-color: #2e93d4;
   }
   ion-row:nth-child(even) {background-color:whitesmoke;}
+  .ion-padding{
+    height: 80vh;
+    width: 100vw;
+    margin-top: 100px;
+  }

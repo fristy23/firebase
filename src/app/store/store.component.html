@@ -1,58 +1,38 @@
-<div class="container">
-  <h1>-Categories List</h1>
-      <button id="addBtn" routerLink="/addcategorystore">+</button> 
+<ion-content class="ion-padding">
 
-    <div class="search">
-      <label for="">Search</label>
-      <input type="text" id="searchLeft">
-    </div>
-    <label for="dog-names" id="dropLabel">Show entries</label>
-    <select name="entries" id="entries">
-        <option value="rigatoni">10</option>
-      <option value="dave">25</option>
-      <option value="pumpernickel">50</option>
-      <option value="reeses">75</option>
-      <option value="reeses">100</option>
-    </select>
-
-    <div class="table" >
+    <h1>-Store List</h1>
+        
+        <ion-button   routerLink="/addcategorystore" >+</ion-button>
   
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col" id="th1">S.No.</th>
-            <th scope="col" id="th1">Category name</th>
-            <th scope="col" id="th1">Icon</th>
-            <th scope="col" id="th1">Edit</th>
-
-          
-          </tr>
-        </thead>
-        <tfoot>
-          <tr>
-            <!-- <th scope="col" id="th1">Name</th>
-            <th scope="col" id="th1">age</th>
-            <th scope="col" id="th1">Last</th>
-            <th scope="col" id="th1">Handle</th> -->
-
-            <th scope="col" id="th1">S.No.</th>
-            <th scope="col" id="th1">Category name</th>
-            <th scope="col" id="th1">Icon</th>
-            <th scope="col" id="th1" routerLink="/employee">Edit</th>
+        <ion-searchbar></ion-searchbar>
+        <ion-item>
+          <ion-select label="Select Entries" label-placement="fixed" placeholder="Entries">
+            <ion-select-option value="10">10</ion-select-option>
+            <ion-select-option value="20">20</ion-select-option>
+            <ion-select-option value="30">30</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col id= "tableheader">S No.</ion-col>
+            <ion-col id= "tableheader" >Category Name</ion-col>
+            <ion-col id= "tableheader">Icon</ion-col>
+            <ion-col id= "tableheader">Edit</ion-col>
+          </ion-row>
+          <ion-row *ngFor="let i of collectstoredata">
+            <ion-col>{{i.CategoryName}}</ion-col>
+            <ion-col>{{i.Edit}}</ion-col>
+            <ion-col id="email">{{i.Icon}}</ion-col>
+            <ion-col>{{i.SNo}}</ion-col>
             
-      
-          </tr>
-        </tfoot>
-        <tbody>
-          <tr *ngFor="let i of collectstoredata">
-            <td>{{ i.CategoryName}}</td>
-            <td>{{ i.Edit}}</td>
-            <td>{{ i.Icon }}</td>        
-            <td>{{ i.SNo }}</td>  
-          </tr>
-            </tbody>
-      </table>
-    </div>
-    <button routerLink="/addcategorystore">submit</button>
+          
+          
+          </ion-row> 
+       
+        </ion-grid>
+    
+      <ion-button shape="round" routerLink="/addcategorystore">Round</ion-button>
+    
   
-</div>
+  
+</ion-content>

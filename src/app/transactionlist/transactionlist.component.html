@@ -1,54 +1,74 @@
-<div class="container">
-  <h1>- Transaction List</h1>
-  <button id="addBtn" routerLink="/transactionlist"></button>
-  <div class="second">
-    <label for="">Form</label>
-    <input type="date" id="form">
-    <span>To</span>
-    <input type="date" id="inp">
-    <ion-button color="danger">Search</ion-button><br><br>
-    <label for="">Order Id</label>
-    <input type="text" id="inp">
-    <ion-button color="danger">Search</ion-button> <br><br>
-    <label for="dog-names" id="dropLabel">Show entries</label>
-    <select name="entries" id="entries">
-      <option value="rigatoni">10</option>
-      <option value="dave">25</option>
-      <option value="pumpernickel">50</option>
-      <option value="reeses">75</option>
-      <option value="reeses">100</option>
-    </select>
-  </div>
-  <div class="table">
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th scope="col" id="th1">Order Id</th>
-          <th scope="col" id="th1">Tracking Id</th>
-          <th scope="col" id="th1">Trans</th>
-          <th scope="col" id="th1">Status</th>
-          <th scope="col" id="th1">Trans Type</th>
-          <th scope="col" id="th1">Status</th>
-          <th scope="col" id="th1">Amount</th>
-          <th scope="col" id="th1">Date</th>
-          <th scope="col" id="th1">Balance</th>
-          <th scope="col" id="th1">User Id</th>
-        </tr>
-      </thead>
-      <tfoot>
-        <tr>
-          <th scope="col" id="th1">Order Id</th>
-          <th scope="col" id="th1">Tracking Id</th>
-          <th scope="col" id="th1">Trans</th>
-          <th scope="col" id="th1">Status</th>
-          <th scope="col" id="th1">Trans Type</th>
-          <th scope="col" id="th1">Status</th>
-          <th scope="col" id="th1">Amount</th>
-          <th scope="col" id="th1">Date</th>
-          <th scope="col" id="th1">Balance</th>
-          <th scope="col" id="th1">User Id</th>
-        </tr>
-      </tfoot>
-    </table>
-  </div>
-</div>
+<ion-content class="ion-padding">
+    <h1>- Transaction List</h1>
+   
+    <ion-button   routerLink="/transactionlist" >+</ion-button>
+    <div class="second">
+      <label for="">Form</label>
+      <input type="date" id="form">
+      <span>To</span>
+      <input type="date" id="inp">
+      <ion-button color="danger">Search</ion-button><br><br>
+      <label for="">Order Id</label>
+      <input type="text" id="inp">
+      <ion-button color="danger">Search</ion-button> <br><br>
+      <ion-item>
+        <ion-select label="Select Entries" label-placement="fixed" placeholder="Entries">
+          <ion-select-option value="10">10</ion-select-option>
+          <ion-select-option value="20">20</ion-select-option>
+          <ion-select-option value="30">30</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col id= "tableheader">Order Id</ion-col>
+        <ion-col id= "tableheader" >Tracking Id</ion-col>
+        <ion-col id= "tableheader">Trans</ion-col>
+        <ion-col id= "tableheader">Status</ion-col>
+        <ion-col id= "tableheader">Amount</ion-col>
+        <ion-col id= "tableheader" >Date</ion-col>
+        <ion-col id= "tableheader">Balance</ion-col>
+        <ion-col id= "tableheader">User</ion-col>
+      </ion-row>
+      <ion-row >
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+        <ion-col id="email"></ion-col>
+        <ion-col></ion-col>
+      </ion-row> 
+    </ion-grid>
+
+    <!-- <div class="table">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" id="th1">Order Id</th>
+            <th scope="col" id="th1">Tracking Id</th>
+            <th scope="col" id="th1">Trans</th>
+            <th scope="col" id="th1">Status</th>
+            <th scope="col" id="th1">Trans Type</th>
+            <th scope="col" id="th1">Status</th>
+            <th scope="col" id="th1">Amount</th>
+            <th scope="col" id="th1">Date</th>
+            <th scope="col" id="th1">Balance</th>
+            <th scope="col" id="th1">User Id</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th scope="col" id="th1">Order Id</th>
+            <th scope="col" id="th1">Tracking Id</th>
+            <th scope="col" id="th1">Trans</th>
+            <th scope="col" id="th1">Status</th>
+            <th scope="col" id="th1">Trans Type</th>
+            <th scope="col" id="th1">Status</th>
+            <th scope="col" id="th1">Amount</th>
+            <th scope="col" id="th1">Date</th>
+            <th scope="col" id="th1">Balance</th>
+            <th scope="col" id="th1">User Id</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div> -->
+ 
+</ion-content>

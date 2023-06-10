@@ -1,50 +1,48 @@
- <div class="row-12">
+<ion-content>
+      <h1>ADD BANNER</h1>
+      <label for="" > Select Image:-</label>
+      <ion-input type="file" (ionChange)="img($event)" alt="Submit" width="48" height="48" id="space"></ion-input>
+        <ion-select label="Choose a state:"   label-placement="floating" fill="outline" (ionChange)="bstate($event)">
+        <ion-select-option value="Uttar Pradesh">Uttar Pradesh</ion-select-option>
+        <ion-select-option value="Madhya Pradesh">Madhya Pradesh</ion-select-option>
+        <ion-select-option value="Chandigarh">Chandigarh</ion-select-option>
+        <ion-select-option value="Kerala">Kerala</ion-select-option>
+      </ion-select>
+      <ion-select label="Choose a City:" label-placement="floating" fill="outline" (ionChange)="bcity($event)">
+        <ion-select-option value="Agra">Agra</ion-select-option>
+        <ion-select-option value="Aligarh">Aligarh</ion-select-option>
+        <ion-select-option value="firozabad">firozabad</ion-select-option>
+        <ion-select-option value="shikhoabad">shikhoabad</ion-select-option>
+      </ion-select>
+     
+      <br>
+      <br>
+      <ion-select label="Choose a Keyword:" label-placement="floating" fill="outline" (ionChange)="bkeyword($event)">
+        <ion-select-option value="mobile accessories">Mobile accessories</ion-select-option>
+        <ion-select-option value="Sports">Sports</ion-select-option>
+        <ion-select-option value="Clothes">Clothes</ion-select-option>
+        <ion-select-option value="shoes">shoes</ion-select-option>
+      </ion-select>
+      <br><br>
+      <ion-select label="Select Vender:" label-placement="floating" fill="outline" (ionChange)="bvendor($event)">
+        <ion-select-option value=" Sakshi Mobile World -sakshi(7817031828)"> Sakshi Mobile World -sakshi(7817031828)</ion-select-option>
+        <ion-select-option value="D-Mart">D-Mart</ion-select-option>
+        <ion-select-option value="Adidas">Adidas</ion-select-option>
+      </ion-select>
+     
+      <br><br>
+      <br><br>
+     
+       <label id="city"> <input type="checkbox" > I have read and accept term</label>
+       <br>
+       <ion-button id="present-alert" (click)="upload()">Submit</ion-button>
+       <ion-alert
+         trigger="present-alert"
+         header="Upload"
+         subHeader=""
+         message="Succesfully Banner"
+         [buttons]="alertButtons"
+         
+       ></ion-alert>
   
-  <div class="col-9">
-    <h1>ADD BANNER</h1>
-    <label for="" > Select Image</label><br>
-    <input type="file" (change)="img($event)" alt="Submit" width="48" height="48" id="space">
-    <label for="state"  >Choose a state:</label><br>
-    <select name="state" (change)="bstate($event)"><br>
-      <option value="agra">Not selected</option>
-      <option value="UP">Uttar Pradesh</option>
-      <option value="MP">Madhya Pradesh</option>
-      <option value="Chandigarh">Chandigarh</option>
-      <option value="Kerala">Kerala</option>
-    </select><br >
-    <label for="City" id="city" >Choose a City:</label>
-    <br>
-    <select name="City" (change)="bcity($event)">
-      <option value="agra">Not selected</option>
-      <option value="agra">Agra</option>
-      <option value="Aligarh">Aligarh</option>
-      <option value="firozabad">firozabad</option>
-      <option value="shikhoabad">shikhoabad</option>
-    </select>
-    
-    <br>
-    <label for="KEYWORD" id="city">KEYWORD:</label>
-    <br>
-    <select (change)="bkeyword($event)">
-      <option value="agra">Not selected</option>
-      <option value="Mobile accessories" id="space">Mobile accessories</option>
-      <option value="Sports" id="space">Sports</option>
-    </select>
-    
-    <br>
-    <br>
-    <label for="select vendor" id="city" >Select Vender:</label>
-    <br>
-   <select name="vendor" (change)="bvendor($event)">
-    <option value="agra">Not selected</option>
-      <option value="Sakshi Mobile World -sakshi(7817031828)"> Sakshi Mobile World -sakshi(7817031828)</option>
-      <option value="D-MART">D-Mart</option>
-      <option value="D-MART">Adidas</option>
-    </select>
-    <br>
-     <label id="city"> <input type="checkbox" > I have read and accept term</label>
-     <br>
-     <ion-button color="danger" (click)="upload()" >Submit</ion-button>
-  </div>
- </div>
-
+</ion-content>

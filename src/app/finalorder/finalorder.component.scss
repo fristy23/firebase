@@ -1,13 +1,13 @@
-.row-12{
-    display: flex;
-   
-    
-  }
-  .col-3{
-    width: 25vw;
-  }
-  .row-9{
-    margin-left: 5px;
-    width:70vw;
-    background-color: whitesmoke;
-  }
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ion-col {
+  border: solid 1px #fff;
+  color: #fff;
+  text-align: center;
+  height:300px;
+}
+#col2{
+  width:100%;
+}

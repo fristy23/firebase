@@ -1,99 +1,10 @@
-.container{
-    // height: 100vh;
-   
-}
-.fields{
-    display: inline-block;
-    margin-top:30px ;
-    width: 65vw;
-  border: 1px solid black;
-}
- 
-#addBtn{
-    background-color: transparent;
-    font-size: 20px;
-    color:black;
-    border: 1px solid black;
-    margin-left: 60vw;
-    margin-bottom: 50px;    
+ion-col{
+  border:none;
 
 }
-.label{
-
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: large;
+#tableheader{
+  border: 2px solid ;
+     color: white;
+     background-color: #2e93d4;
 }
-#text{
-    border-radius: 10px;
-}
-
-#label-to{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-button{
-    margin-left: 30px;
-    background-color: transparent;
-    border:none;
-    background-color: orangered;
-    color:#ddd;
-    /* border-top:1px solid black ;
-    border-bottom:1px solid black ; */
-    border-radius:0px;
-    padding:10px 20px;
-    font-size:15px;
-    cursor:pointer;
-  }
-  #btn{
-    margin-left:40px ;
-  }
-  
-  button:hover{
-    background-color:white;
-  }
-  .digit{
-    width:300px;
-  }
-  .email{
-    margin-left: 89px;
-    width:300px;
-  }
-  #dropLabel{
-
-    margin-left: 20px;
-    margin-right: 20px;
-    color: black;
-  }
-  #entries{
-    border:none;
-    background-color: transparent;
-    border-bottom: 1px solid black;
-    color:black;
-  }
-  .search{
-    text-align: end;
-    color:black ;
-  }
-  #searchLeft{
-
-    border:none;
-    margin-left: 8px;
-    
-    border-bottom:1px solid black ;
-    margin-right: 10px;
-  }
-  #th1{
-    padding-right:25px ;
-  }
-
-  .table{
-    margin-top: 20px;
-    color: black;
-    border-color: white;
-    border-width: 5px;
-    border-style: solid;
-  }
-  h1{
-    color: black;
-  }
+ion-row:nth-child(even) {background-color:whitesmoke;}

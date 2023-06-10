@@ -12,7 +12,7 @@ import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import { OperstionsComponent } from './operstions/operstions.component';
-
+import { ProductComponent } from './adminPages/product/product.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { BannerComponent } from './adminPages/banner/banner.component';
 import { EditbannerComponent } from './editbanner/editbanner.component';
@@ -33,6 +33,9 @@ import { FinalvendorComponent } from './finalvendor/finalvendor.component';
 import { FinaltransactionComponent } from './finaltransaction/finaltransaction.component';
 import { FinalorderComponent } from './finalorder/finalorder.component';
 import { ContactComponent } from './contact/contact.component';
+import { FinalstoreComponent } from './finalstore/finalstore.component';
+import { AccountComponent } from './account/account.component';
+import { AddProductComponent } from './adminPages/add-product/add-product.component';
       
 const routes: Routes = [
   {
@@ -65,9 +68,17 @@ const routes: Routes = [
 
   },
   {
+    path:'addProduct',
+    component:AddProductComponent
+  },
+  {
     path:'userdetails',
     component:UserdetailsPage,
 
+  },
+  {
+    path:'product',
+    component:ProductComponent
   },
   {
     path:'home',
@@ -163,6 +174,10 @@ const routes: Routes = [
   component:ContactComponent
 },
 {
+  path:'finalstore',
+  component:FinalstoreComponent
+},
+{
   path:'finaltransaction',
   component:FinaltransactionComponent
 },
@@ -177,6 +192,11 @@ const routes: Routes = [
 {
   path:'finalvendor',
   component:FinalvendorComponent
+},
+{
+  path:'account',
+  component:AccountComponent
+
 }
 ];
 @NgModule({

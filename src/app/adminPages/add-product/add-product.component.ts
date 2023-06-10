@@ -1,39 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { Injectable } from '@angular/core';
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { getFirestore } from "firebase/firestore";
-import { getDatabase } from "firebase/database";
-import { doc, getDoc } from "firebase/firestore";
-import { FirebaseStorage } from 'firebase/storage';
-import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-
 const db = getFirestore();
 const storage = getStorage();
-@Injectable({
-  providedIn: 'root'
-})
 @Component({
-  selector: 'app-addbanner',
-  templateUrl: './addbanner.component.html',
-  styleUrls: ['./addbanner.component.scss'],
+  selector: 'app-add-product',
+  templateUrl: './add-product.component.html',
+  styleUrls: ['./add-product.component.scss'],
 })
-export class AddbannerComponent implements OnInit {
-  public alertButtons = ['OK'];
+export class AddProductComponent  implements OnInit {
 
-
-  image: any = ""
-  state: string = ""
-  vendor = ""
-  keyword = ""
-  city = ""
-  udata = ""
-  a: any
-  fileName: any
   constructor() { }
-
-
-  ngOnInit() { }
-
+  image:any
+  Name:string=""
+  Description:string=""
+  SellPrice=""
+  fileName:any
+  ngOnInit() {}
 
   img(event: any) {
     
@@ -42,35 +26,30 @@ export class AddbannerComponent implements OnInit {
     console.log("img",this.fileName,event);
 
   }
-  bstate(event: any) {
-    console.log(this.state,event);
-    this.state = event.target.value;
-    
+  NameValue(event:any)
+  {
+    this.Name=event.target.value;
   }
-  bcity(event: any) {
-    this.city = event.target.value;
+  DescriptionValue(event:any)
+  {
+     this.Description=event.target.value;
+  }
+  SellPriceValue(event:any)
+  {
+    this.SellPrice=event.target.value;
+  }
 
-  }
-  bvendor(event: any) {
-    this.vendor = event.target.value;
-
-  }
-  bkeyword(event: any) {
-    this.keyword = event.target.value;
-
-  }
 
   async add() {
-    console.log(this.state)
+    
     try {
       const db = getFirestore();
-      const docRef = await addDoc(collection(db, "banner"), {
-
+      const docRef = await addDoc(collection(db, "Product"), {
         image: "https:firebasestorage.googleapis.com/v0/b/fristy-fd454.appspot.com/o/" + this.fileName + "?alt=media&token=6219c186-a39f-41af-a72a-40b87a0047c5&_gl=1*cmppby*_ga*MTk2NjgxNzgzOC4xNjgyNzk0NjU0*_ga_CW55HF8NVT*MTY4NTM2MzA2Mi4zOC4xLjE2ODUzNjc0MTguMC4wLjA",
-        city: this.city,
-        vendor: this.vendor,
-        keyword: this.keyword,
-        state: this.state,
+        Name: this.Name,
+        Description:this.Description,
+        SellPrice: this.SellPrice,
+        
       });
       console.log("Document written with ID: ", docRef.id);
     } catch (e) {
@@ -80,12 +59,12 @@ export class AddbannerComponent implements OnInit {
     window.alert("Success !")
   }
   upload() {
-    console.log("hii", this.state);
-    if (this.state == "" || this.city == "" || this.keyword == "" || this.vendor == "") {
+   
+    if (this.Name == "" || this.Description == "" || this.SellPrice == "") {
       window.alert("please fill the details properly");
     }
     else {
-      console.log(this.city)
+      
       /** @type {any} */
       const metadata = {
         contentType: 'image/jpg'

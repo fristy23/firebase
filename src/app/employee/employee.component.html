@@ -17,13 +17,13 @@
         </ion-accordion-group>
         <ion-grid>
           <ion-row>
-            <ion-col id= "tableheader">UserName</ion-col>
-            <ion-col id= "tableheader" >firstName</ion-col>
-            <ion-col id= "tableheader">LastName</ion-col>
-            <ion-col id= "tableheader">Email</ion-col>
-            <ion-col id= "tableheader">Number</ion-col> 
-            <ion-col id= "tableheader">Register Date</ion-col>
-            <ion-col id= "tableheader">option</ion-col>
+            <ion-col id="tableheader">UserName</ion-col>
+            <ion-col id="tableheader">firstName</ion-col>
+            <ion-col id="tableheader">LastName</ion-col>
+            <ion-col id="tableheader">Email</ion-col>
+            <ion-col id="tableheader">Number</ion-col> 
+            <ion-col id="tableheader">Register Date</ion-col>
+            <ion-col id="tableheader">option</ion-col>
           </ion-row>
           <ion-row *ngFor="let i of employeeData">
             <ion-col>{{i.userName}}</ion-col>
@@ -32,7 +32,8 @@
             <ion-col id="email">{{i.email}}</ion-col>
             <ion-col>{{i.Number}}</ion-col>
             <ion-col></ion-col>
-           <ion-col><i class="fa-sharp fa-solid fa-lock" style="color: rgb(10, 67, 146)"></i>
-           </ion-col> 
+            <ion-col><i class="fa-sharp fa-solid fa-lock" style="color: rgb(10, 67, 146)"></i>
+            </ion-col> 
           </ion-row> 
-        </ion-grid>    </ion-content>
+        </ion-grid>    
+      </ion-content>
