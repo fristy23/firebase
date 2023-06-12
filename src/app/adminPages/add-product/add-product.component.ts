@@ -12,12 +12,24 @@ const storage = getStorage();
 export class AddProductComponent  implements OnInit {
 
   constructor() { }
+  Category:string=""
   image:any
   Name:string=""
   Description:string=""
   SellPrice=""
   fileName:any
+  Color:string=""
   ngOnInit() {}
+
+select:string=""
+selectOption(event:any)
+{
+   this.select=event.target.value;
+}
+selectColor(event:any)
+{
+  this.Color=event.target.value;
+}
 
   img(event: any) {
     
@@ -49,7 +61,9 @@ export class AddProductComponent  implements OnInit {
         Name: this.Name,
         Description:this.Description,
         SellPrice: this.SellPrice,
-        
+        selectOption:this.select,
+        selectColor:this.Color
+
       });
       console.log("Document written with ID: ", docRef.id);
     } catch (e) {
