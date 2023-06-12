@@ -1,85 +1,31 @@
-<nav class="navbar navbar-expand-lg " id="navbar2">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" id="nav2">
-        <li class="nav-item" id="nav2">
-          <a class="nav-link active" aria-current="page" href="#"></a>
-        </li>
-        <li class="nav-item" id="nav2">
-          <ul>
-            <!-- <a class="nav-link">CLOTHES</a> -->
-            <div class="dropdown">
-              <button>CLOTHES</button>
-              <div class="dropdown-options">
-                  <a routerLink="/shirts">Shirts</a>
-                  <a routerLink="/t-shirts">T-Shirts</a> 
-                  <a routerLink="/sports">Sports</a>
-              </div>
-            </div>
-        </ul>
+<ion-header>
+  <ion-button > <ion-item >
+    <ion-select aria-label="CLOTHES" placeholder="CLOTHES" >
+      <ion-select-option value="T-SHIRT">T-SHIRT</ion-select-option>
+      <ion-select-option value="SHIRT">SHIRT</ion-select-option>
+      <ion-select-option value="JEANS">JEANS</ion-select-option>
+    </ion-select>
+  </ion-item></ion-button>
+  <ion-button > <ion-item >
+    <ion-select aria-label="ACCESSORIES" placeholder="ACCESSORIES" >
+      <ion-select-option value="MOBILE">MOBILE</ion-select-option>
+      <ion-select-option value="LAPTOP">LAPTOP</ion-select-option>
+      <ion-select-option value="TABLET">TABLET</ion-select-option>
+    </ion-select>
+  </ion-item></ion-button>
+  <ion-button > <ion-item >
+    <ion-select aria-label="SHOES" placeholder="SHOES"  >
+      <ion-select-option value="FORMAL">FORMAL</ion-select-option>
+      <ion-select-option value="CAUSAL">CAUSAL</ion-select-option>
+      <ion-select-option value="SPORTS">SPORTS</ion-select-option>
+    </ion-select>
+  </ion-item></ion-button>
+  <ion-button> <ion-item >
+    <ion-select aria-label="SPORTS" placeholder=" SPORTS" >
+      <ion-select-option value="CRICKET">CRICKET</ion-select-option>
+      <ion-select-option value="FOOTBALL">FOOTBALL</ion-select-option>
+      <ion-select-option value="TABLE TENNIS">TABLE TENNIS</ion-select-option>
+    </ion-select>
+  </ion-item></ion-button>
 
-        </li>
-        <li class="nav-item" id="nav2">
-          <!-- <a class="nav-link" href="#" routerLink="/items"  routerLinkActive="active" ariaCurrentWhenActive="page">ACCESSORIES</a> -->
-          <div class="dropdown">
-            <button>ACCESSORIES</button>
-            <div class="dropdown-options">
-                <a routerLink="/shirts">Shirts</a>
-                <a routerLink="/t-shirts">T-Shirts</a>
-                <a routerLink="/sports">Sports</a>
-            </div>
-          </div>
-
-        </li>
-        <li class="nav-item" id="nav2">
-          <!-- <a class="nav-link ">SHOES</a> -->
-
-          <div class="dropdown">
-            <button>SHOES</button>
-            <div class="dropdown-options">
-                <a routerLink="/shirts">Shirts</a>
-                <a routerLink="/t-shirts">T-Shirts</a>
-                <a routerLink="/sports">Sports</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item" id="nav2">
-          <!-- <a class="nav-link ">SPORTSWEAR</a> -->
-
-          <div class="dropdown">
-            <button>SPORTS</button>
-            <div class="dropdown-options">
-                <a routerLink="/shirts">Shirts</a>
-                <a routerLink="/t-shirts">T-Shirts</a>
-                <a routerLink="/sports">Sports</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item" id="nav2">
-          <!-- <a class="nav-link ">ELECTRONIC</a> -->
-
-          <div class="dropdown">
-            <button>ELECTRONIC</button>
-            <div class="dropdown-options">
-                <a routerLink="/shirts">Shirts</a>
-                <a routerLink="/t-shirts">T-Shirts</a>
-                <a routerLink="/sports">Sports</a>
-            </div>
-          </div>
-        </li>
-         <!-- <li class="nav-item" id="nav2">
-           <a class="nav-link " routerLink="/login"></a> 
-          <div class="dropdown">
-            <button routerLink="/login" (click)="login()">LOGIN</button>
-          </div>
-        </li>
-          -->
-      </ul>
-    </div>
-  </div>
-</nav>
-
+</ion-header>

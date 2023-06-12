@@ -1,74 +1,25 @@
 
-.nav-item{
-	color: white;
-	
+ion-header{
+  background-color: grey;
+  width: 100%;
+  height: 60px;
 }
-
-#nav2{
-    margin-left: 40px;
-    margin-right: 40px;
-    color:white;
-    
-   
+ion-list{
+  width:50px;
+  }
+ion-select{
+  border: none;
+  --placeholder-color:white;
 }
-#nav2 a{
-    color:white;
+ion-button{
+ --background:transparent ;
+ 
+height: 50px;
+  padding-top: 5px;
+  padding-left: 80px;
+  padding-right: 50px;
 }
-#navbar1{
-	color:white;
-
+ion-item{
+  --background:transparent ;
+  color:white;
 }
-#navbar2{
-	background-color: grey ;
-    text-align: center;
-    
-}
-
-
-.dropdown {
-    display: inline-block;
-    position:relative;
-  }
-  
-  button{
-    background-color: transparent;
-    border:none;
-    color:#ddd;
-
-    border-radius:0px;
-    padding:10px 20px;
-    font-size:15px;
-    cursor:pointer;
-  }
-  
-  button:hover{
-    background-color:#18FFFF;
-  }
-  
-  .dropdown-options {
-    display: none;
-    position:static;
-    overflow: auto;
-    background-color:gray;
-    border-radius:5px;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  }
-  
-  .dropdown:hover .dropdown-options {
-    display:list-item;
-  }
-  
-  .dropdown-options a {
-    display: inline-block;
-    color: #000000;
-    padding: 5px;
-    text-decoration: none;
-    padding:20px 40px;
-  }
-  
-  .dropdown-options a:hover {
-    color: #0a0a23;
-    background-color:#18FFFF;
-    border-radius:5px;
-  }
-  

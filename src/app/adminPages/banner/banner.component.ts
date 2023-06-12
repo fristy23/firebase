@@ -30,7 +30,7 @@ export class BannerComponent implements OnInit {
  
   constructor(private router: Router, private addbanner: AddbannerComponent) {
   //  this.show();
-      this.alldocument()
+      // this.alldocument()
       
       // this.loadblobimage();s
    }

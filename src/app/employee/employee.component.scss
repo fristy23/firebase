@@ -15,8 +15,11 @@
        background-color: #2e93d4;
   }
   ion-row:nth-child(even) {background-color:whitesmoke;}
-  .ion-padding{
+ .ion-padding{
     height: 80vh;
     width: 100vw;
     margin-top: 100px;
+  }
+  ion-content{
+    overflow: scroll;
   }

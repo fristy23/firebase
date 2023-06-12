@@ -12,7 +12,7 @@ import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import { OperstionsComponent } from './operstions/operstions.component';
-import { ProductComponent } from './adminPages/product/product.component';
+
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { BannerComponent } from './adminPages/banner/banner.component';
 import { EditbannerComponent } from './editbanner/editbanner.component';
@@ -36,6 +36,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FinalstoreComponent } from './finalstore/finalstore.component';
 import { AccountComponent } from './account/account.component';
 import { AddProductComponent } from './adminPages/add-product/add-product.component';
+import { FinalaccountComponent } from './finalaccount/finalaccount.component';
+import { ProductComponent } from './product/product.component';
       
 const routes: Routes = [
   {
@@ -76,10 +78,7 @@ const routes: Routes = [
     component:UserdetailsPage,
 
   },
-  {
-    path:'product',
-    component:ProductComponent
-  },
+ 
   {
     path:'home',
     component:HomeComponent,
@@ -197,7 +196,19 @@ const routes: Routes = [
   path:'account',
   component:AccountComponent
 
-}
+},
+{
+  path:'finalaccount',
+  component:FinalaccountComponent
+},
+{
+  path:'product',
+  component:ProductComponent
+},
+{
+  path:'addproduct',
+  component:AddProductComponent
+},
 ];
 @NgModule({
   imports: [

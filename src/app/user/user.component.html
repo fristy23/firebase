@@ -1,68 +1,46 @@
-<ion-content class="content">
-  <p id="paraUser">User List<a>(Clear)</a></p>
-  <div class="container">
-
-    <div class="fields">
-
-      <label for="" class="label">From :</label>
-
-      <input type="text" id="text">
-      <label for="" id="label-to">To</label>
-      <input type="text" id="text">
-      <button>Search</button>
+<ion-content>
+<h1>User List(Clear)</h1>
+    <ion-searchbar ></ion-searchbar>
+    <ion-button shape="round">Search</ion-button>
       <br><br>
       <label for="" class="label">Number(10 digit) : </label>
-      <input type="text" id="text" class="digit">
-      <button id="btn">Search</button>
+      <ion-searchbar ></ion-searchbar>
+      <ion-button shape="round">Search</ion-button>
       <br><br>
-      <label for="" class="label">Email : </label>
-      <input type="text" id="text" class="email">
-      <button id="btn">Search</button>
+      <label for="" class="label">Email:- </label>
+      <ion-searchbar ></ion-searchbar>
+      <ion-button shape="round">Search</ion-button>
       <br><br>
-
-
-      <label for="dog-names" id="dropLabel">Show entries</label>
-      <select name="entries" id="entries">
-        <option value="rigatoni">10</option>
-        <option value="dave">25</option>
-        <option value="pumpernickel">50</option>
-        <option value="reeses">75</option>
-        <option value="reeses">100</option>
-      </select>
-
-
-      <div class="search">
-        <label for="">Search</label>
-        <input type="text" id="searchLeft">
-      </div>
-
-      <div class="table">
-
-        <thead>
-          <tr>
-
-
-            <th scope="col" id="th1">Number</th>
-            <th scope="col" id="th1">Name</th>
-            <th scope="col" id="th1">Status</th>
-            <th scope="col" id="th1">Gender</th>
-            <th scope="col" id="th1">Balance</th>
-            <th scope="col" id="th1">Cashback</th>
-            <th scope="col" id="th1">Role</th>
-            <th scope="col" id="th1">ReferId</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let row of collectusersdata">
-            <td>{{ row.Email }}</td>
-            <td>{{ row.user}}</td>
-            <td>{{ row.password }}</td>
-
-          </tr>
-
-        </tbody>
-
-      </div>
-    </div>
-  </div>
+      <ion-item>
+        <ion-select label="Select Entries" label-placement="fixed" placeholder="Entries">
+          <ion-select-option value="10">10</ion-select-option>
+          <ion-select-option value="20">20</ion-select-option>
+          <ion-select-option value="30">30</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-grid>
+        <ion-row >
+          <ion-col id= "tableheader">Email</ion-col>
+          <ion-col id= "tableheader" >Name</ion-col>
+          <ion-col id= "tableheader">Password</ion-col>
+          <ion-col id= "tableheader">Gender</ion-col>
+          <ion-col id= "tableheader">Balance</ion-col>
+          <ion-col id= "tableheader" >Cashback</ion-col>
+          <ion-col id= "tableheader">Role</ion-col>
+          <ion-col id= "tableheader">ReferId</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let i of collectusersdata ">
+          <ion-col>{{i.Email}}</ion-col>
+          <ion-col>{{i.user}}</ion-col>
+          <ion-col id="email">{{i.password}}</ion-col>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+          <ion-col></ion-col>
+          
+        </ion-row> 
+      </ion-grid>
+  
 </ion-content>

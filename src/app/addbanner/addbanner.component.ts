@@ -36,30 +36,22 @@ export class AddbannerComponent implements OnInit {
 
 
   img(event: any) {
-    
-    this.image = event.target.files[0];
-    this.fileName = this.image.name;
-    console.log("img",this.fileName,event);
-
+    this.image = event.target.value;   
+    console.log("  img",this.image,event);
   }
   bstate(event: any) {
     console.log(this.state,event);
     this.state = event.target.value;
-    
   }
   bcity(event: any) {
     this.city = event.target.value;
-
   }
   bvendor(event: any) {
     this.vendor = event.target.value;
-
   }
   bkeyword(event: any) {
     this.keyword = event.target.value;
-
   }
-
   async add() {
     console.log(this.state)
     try {
@@ -80,12 +72,12 @@ export class AddbannerComponent implements OnInit {
     window.alert("Success !")
   }
   upload() {
-    console.log("hii", this.state);
+    console.log("state", this.state);
     if (this.state == "" || this.city == "" || this.keyword == "" || this.vendor == "") {
       window.alert("please fill the details properly");
     }
     else {
-      console.log(this.city)
+      console.log(this.city);
       /** @type {any} */
       const metadata = {
         contentType: 'image/jpg'
