@@ -15,7 +15,7 @@ const db = getFirestore();
 export class EmployeeComponent implements OnInit {
 
   constructor(private router: Router,public elRef:ElementRef) {
-    this.read()
+    this.read();
   }
   employeeData: any = ""
   userName = ""

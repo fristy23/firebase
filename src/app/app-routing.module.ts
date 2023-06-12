@@ -35,6 +35,9 @@ import { FinalorderComponent } from './finalorder/finalorder.component';
 import { ContactComponent } from './contact/contact.component';
 import { FinalstoreComponent } from './finalstore/finalstore.component';
 import { AccountComponent } from './account/account.component';
+import { FinalaccountComponent } from './finalaccount/finalaccount.component';
+import { ProductComponent } from './product/product.component';
+import { FinalproductComponent } from './finalproduct/finalproduct.component';
       
 const routes: Routes = [
   {
@@ -188,6 +191,18 @@ const routes: Routes = [
   path:'account',
   component:AccountComponent
 
+},
+{
+  path:'finalaccount',
+  component:FinalaccountComponent
+},
+{
+  path:'product',
+  component:ProductComponent
+},
+{
+  path:'finalproduct',
+  component:FinalproductComponent
 }
 ];
 @NgModule({

@@ -20,19 +20,11 @@
             <ion-col id= "tableheader">Edit</ion-col>
           </ion-row>
           <ion-row *ngFor="let i of collectstoredata">
-            <ion-col>{{i.CategoryName}}</ion-col>
-            <ion-col>{{i.Edit}}</ion-col>
+            <ion-col>{{i.image}}</ion-col>
+            <ion-col>{{i.name}}</ion-col>
             <ion-col id="email">{{i.Icon}}</ion-col>
             <ion-col>{{i.SNo}}</ion-col>
-            
-          
-          
           </ion-row> 
-       
         </ion-grid>
-    
-      <ion-button shape="round" routerLink="/addcategorystore">Round</ion-button>
-    
-  
-  
+      <ion-button shape="round" routerLink="/addcategorystore">Submit</ion-button>
 </ion-content>
