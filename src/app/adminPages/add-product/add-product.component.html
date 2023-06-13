@@ -5,10 +5,11 @@
 
   <ion-list id="select">
     <ion-item>
-      <ion-select id="selectField"  placeholder="Select Cataegory">
-        <ion-select-option value="apples">Apples</ion-select-option>
-        <ion-select-option value="oranges">Oranges</ion-select-option>
-        <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select id="selectField" (ionChange)="selectOption($event)" placeholder="Select Category">
+        
+        <ion-select-option value="Shoes">Shoes</ion-select-option>
+        <ion-select-option value="Shirts">Shirts</ion-select-option>
+        <ion-select-option value="Sports">Sports</ion-select-option>
       </ion-select>
     </ion-item>
   </ion-list>
@@ -19,7 +20,7 @@
 
   <ion-item id="selectField" class="flex items-center">
     <ion-label class="mr-2">Favorite Color</ion-label>
-    <ion-select class="w-full bg-gray-200 rounded-md px-10 py-2">
+    <ion-select (ionChange)="selectColor($event)" class="w-full bg-gray-200 rounded-md px-10 py-2">
       <ion-select-option value="red">Red</ion-select-option>
       <ion-select-option value="blue">Blue</ion-select-option>
       <ion-select-option value="green">Green</ion-select-option>
