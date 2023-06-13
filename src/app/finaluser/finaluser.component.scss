@@ -1,15 +1,14 @@
-*{
-  margin:0px;
-  padding: 0px;
-}
-ion-col{
-  height:300px;
-
-}
-#tableheader{
-  border: 2px solid ;
-     color: white;
-     background-color: #2e93d4;
-}
-ion-row:nth-child(even) {background-color:whitesmoke;}
-
+.row-12{
+    display: flex;
+   
+    
+  }
+  .col-3{
+    width: 100vw;
+  }
+  .col-9{
+    margin-top: 60px;
+    
+    width:90vw;
+    background-color: white;
+  }

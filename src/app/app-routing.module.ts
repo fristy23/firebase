@@ -35,9 +35,9 @@ import { FinalorderComponent } from './finalorder/finalorder.component';
 import { ContactComponent } from './contact/contact.component';
 import { FinalstoreComponent } from './finalstore/finalstore.component';
 import { AccountComponent } from './account/account.component';
+import { AddProductComponent } from './adminPages/add-product/add-product.component';
 import { FinalaccountComponent } from './finalaccount/finalaccount.component';
 import { ProductComponent } from './product/product.component';
-import { FinalproductComponent } from './finalproduct/finalproduct.component';
       
 const routes: Routes = [
   {
@@ -70,10 +70,15 @@ const routes: Routes = [
 
   },
   {
+    path:'addProduct',
+    component:AddProductComponent
+  },
+  {
     path:'userdetails',
     component:UserdetailsPage,
 
   },
+ 
   {
     path:'home',
     component:HomeComponent,
@@ -201,9 +206,9 @@ const routes: Routes = [
   component:ProductComponent
 },
 {
-  path:'finalproduct',
-  component:FinalproductComponent
-}
+  path:'addproduct',
+  component:AddProductComponent
+},
 ];
 @NgModule({
   imports: [

@@ -1,0 +1,40 @@
+<ion-content >
+<div class="content">
+  <ion-label id="StatusLabel">Status:Active</ion-label>
+  <ion-toggle [enableOnOffLabels]="true"></ion-toggle>
+
+  <ion-list id="select">
+    <ion-item>
+      <ion-select id="selectField"  placeholder="Select Cataegory">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-input label="Name" (ionChange)="NameValue($event)"label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+  <ion-input label="Description" (ionChange)="DescriptionValue($event)" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+  <ion-input label="Sell Price" (ionChange)="SellPriceValue($event)" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+
+  <ion-item id="selectField" class="flex items-center">
+    <ion-label class="mr-2">Favorite Color</ion-label>
+    <ion-select class="w-full bg-gray-200 rounded-md px-10 py-2">
+      <ion-select-option value="red">Red</ion-select-option>
+      <ion-select-option value="blue">Blue</ion-select-option>
+      <ion-select-option value="green">Green</ion-select-option>
+      <ion-select-option value="yellow">Yellow</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item id="image">
+    <ion-label>Upload Image</ion-label>
+    <ion-input type="file" (ionChange)="img($event)" accept="image/*" ></ion-input>
+  </ion-item>
+  <ion-button id="imageBtn" >Upload</ion-button>
+  
+ <ion-button expand="full" (click)="add()">ADD</ion-button>
+
+</div>
+ 
+</ion-content>
