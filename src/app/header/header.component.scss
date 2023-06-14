@@ -1,75 +1,56 @@
-#firstnavbar{
-	margin-left:90px;
-}
-.nav-item{
-	color: black;
-	margin-left: 20px;
-}
-.d-flex{
+ion-header{
+	background-color: black;
+  }
+  ion-toolbar {
+	--background: linear-gradient(to right, #3f51b5, #2196f3);
+	--ion-color-base: #ffffff;
+	--ion-color-contrast: #ffffff;
+	
+  }
+  
+  .header-title {
+	margin-top: 10px;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	display: inline-block;
+  }
+  ion-button {
+	margin-top: 10px;
+	--background: transparent;
+	--background-hover: #9ce0be;
+	--background-activated: #88f4be;
+	--background-focused: #88f4be;
+  
+	 --color: white;
+  }
+  
+  .search{
+	width:25vw;
+	display: inline-block;
 	margin-left: 50px;
-	width: 30vw;
-	height: 40px;
-}
-.Container{
-	background-color: seagreen;
-	width: 100%;
-	height: 300px;
-}
-#nav2{
-	padding-left: 40px;
-	padding-right: 40px;
-
-}
-#navbar1{
-	color: white;
-
-}
-
-#navbar2{
-	background-color: grey ;
-}
-#col1{
-	background-color: #18FFFF;
-	height: 100px;
-	width: 700px;
-	float: left;
-}
-#col2{
-	height: 300px;
-	width: 649px;
-	float: left;
-
-}
-h4{
-	text-align: center;
-	font-family: sans-serif;
-	font-size: 40px;
-	padding-bottom: 40px;
-	
-}
-#f{
-	margin-left: 200px;
-}
-.block{
-	background-color: #18FFFF;
+   margin-top: 5px;
+  }
+  #searchBtn{
+	// margin-top:12px;
+  }
+  .ion-padding{
 	color:black;
-	text-align: center;
-	
-}
-h3{
-	font-size: 48px;
-    font-weight: 900;
-    letter-spacing: 1.5px;
-    font-style: italic;
-    line-height: 48px;
-}
-.btn{
-	background-color: #18FFFF;
-	height: 40px;
-		border:none;
-		border:2.5px solid black;
-		font-weight: bold;
-		color:black;
-		margin-bottom: 20px;
-		
-}
+  }
+  #loginBtn{
+	float:right;
+	margin-right: 50px;
+  }
+  ion-header{
+	height:10vh;
+	display: flex;
+	justify-content: center;
+	background-color: #222428;
+   
+  }
+  ion-accordion-group{
+	background-color: black;
+  
+  }
+  
