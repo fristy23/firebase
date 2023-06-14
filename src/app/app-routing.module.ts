@@ -12,7 +12,7 @@ import { LandingComponent } from './landing/landing.component';
 import { ButtonComponent } from './components/button/button.component';
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import { OperstionsComponent } from './operstions/operstions.component';
-
+import { AdminDetailsComponent } from './admin-details/admin-details.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { BannerComponent } from './adminPages/banner/banner.component';
 import { EditbannerComponent } from './editbanner/editbanner.component';
@@ -60,6 +60,10 @@ const routes: Routes = [
   {
     path:'tab1',
     component:Tab1Page,
+  },
+  {
+    path:'AdminDetails',
+    component:AdminDetailsComponent
   },
   {
      path:'',

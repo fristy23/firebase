@@ -49,8 +49,9 @@ import { StoreComponent } from './store/store.component';
 import { ShopnowComponent } from './shopnow/shopnow.component';
 import { FinalaccountComponent } from './finalaccount/finalaccount.component';
 import { FinalproductComponent } from './finalproduct/finalproduct.component';
+import { AdminDetailsComponent } from './admin-details/admin-details.component';
 @NgModule({
-  declarations: [AppComponent,ShopnowComponent,FinalaccountComponent,FinalstoreComponent,FinaluserComponent,FinalproductComponent, AddProductComponent,ProductComponent,AccountComponent,FinaluserComponent,StoreComponent,ContactComponent,FinalorderComponent,FinaltransactionComponent,FinalvendorComponent,UserComponent,FinalemployeeComponent,EmployeeComponent,AddcategorystoreComponent,OrderComponent,VendorComponent,AddfinalbannerComponent,FinalbannerComponent,AdmindashboardComponent,AdminprofileComponent,AddbannerComponent,BannerComponent,AddemployeeComponent,TransactionlistComponent,OperstionsComponent,EditbannerComponent
+  declarations: [AppComponent,ShopnowComponent,AdminDetailsComponent,FinalaccountComponent,FinalstoreComponent,FinaluserComponent,FinalproductComponent, AddProductComponent,ProductComponent,AccountComponent,FinaluserComponent,StoreComponent,ContactComponent,FinalorderComponent,FinaltransactionComponent,FinalvendorComponent,UserComponent,FinalemployeeComponent,EmployeeComponent,AddcategorystoreComponent,OrderComponent,VendorComponent,AddfinalbannerComponent,FinalbannerComponent,AdmindashboardComponent,AdminprofileComponent,AddbannerComponent,BannerComponent,AddemployeeComponent,TransactionlistComponent,OperstionsComponent,EditbannerComponent
     ,ButtonComponent,LandingheaderComponent,LandingComponent,SocialmediaComponent,FooterComponent,SignupComponent,BrandsComponent,HeaderComponent,HomeComponent,ItemsComponent,Banner2Component,NavbarComponent,Banner1Component],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

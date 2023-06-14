@@ -6,11 +6,23 @@ h3{
     line-height: 48px;
 }
 .block{
-	background-color: #18FFFF;
+
+  display: flex;
+	
 	color:black;
 	text-align: center;
 	
 }
 #img{
   margin-left: 500px;
+}
+.first{
+  background-color: #18FFFF;
+	color:black;
+	text-align: center;
+	
+}
+.bann{
+  margin-left: 5px;
+  margin-right: 5px;
 }

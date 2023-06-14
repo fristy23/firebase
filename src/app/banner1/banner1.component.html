@@ -1,7 +1,12 @@
 
-<div class="block">
+<div class="first">
   <img src="https://content.asos-media.com/-/media/homepages/unisex/homepages/2023/feb/2023-spinner/web_spinner_gbl_215x40.gif"  id="img" alt="gif" style="margin-top: 20px; margin-bottom: 20px;">
   <h3>UPTO +30% OFF OUTLET!
     <br>ALREADY UP TO 70% OFF <br> </h3><h5>Discount revealed at checkout</h5> <br><h5>With code: <button class="btn"> SURPRISE</button> </h5>
     <p style="padding-bottom: 40px;">Outlet items only. See Website banner for T&C. Selected marked products excluded from promo </p> 
   </div>
+<div class="block">
+  <ion-row *ngFor="let i of collectbannerdata">
+    <span class="bann"><img src="{{i.image}}" alt="img" width="440x"></span>
+    </ion-row>
+</div>
