@@ -1,13 +1,27 @@
 <ion-content class="ion-padding">
+<h1>Product Details</h1>
   <ion-grid>
-    <ion-row >
-      <ion-col>{{1}}</ion-col>
-      <ion-col>{{2}}</ion-col>
+    <ion-row>
+      <ion-col id="tableheader">Name</ion-col>
+      <ion-col id="tableheader">Description</ion-col>
+      <ion-col id="tableheader">SellPrice</ion-col>
+      <ion-col id="tableheader">selectPrice</ion-col>
+      <ion-col id="tableheader">selectColor</ion-col>
+      <ion-col id="tableheader"></ion-col>
+      <ion-col id="tableheader"></ion-col>
+    </ion-row>
+    <ion-row  *ngFor="let i of productdata" >
+      <ion-col>{{i.Name}}</ion-col>
+      <ion-col>{{i.Description}}</ion-col>
+      <ion-col>{{i.SellPrice}}</ion-col>
+      <ion-col>{{i.selectOption}}</ion-col>
+      <ion-col>{{i.selectColor}}</ion-col>
+      <!-- <ion-col>{{i.image}}</ion-col> -->
       <ion-col><ion-button>Updates</ion-button></ion-col>
-      <ion-col id="email">{{3}}</ion-col>
+   
       <ion-col><ion-button color="danger">Remove</ion-button></ion-col>
     </ion-row> 
   </ion-grid>   
-  <ion-button (click)="addproduct()" >+</ion-button>
+  <ion-button (click)="addproduct()" id="add" >+</ion-button>
 
 </ion-content>

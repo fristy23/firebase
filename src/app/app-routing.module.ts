@@ -38,6 +38,7 @@ import { AccountComponent } from './account/account.component';
 import { AddProductComponent } from './adminPages/add-product/add-product.component';
 import { FinalaccountComponent } from './finalaccount/finalaccount.component';
 import { ProductComponent } from './product/product.component';
+import { ShopnowComponent } from './shopnow/shopnow.component';
       
 const routes: Routes = [
   {
@@ -209,6 +210,11 @@ const routes: Routes = [
   path:'addproduct',
   component:AddProductComponent
 },
+{
+  path:'shopnow',
+  component:ShopnowComponent
+}
+
 ];
 @NgModule({
   imports: [

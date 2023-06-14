@@ -13,3 +13,23 @@ ion-col{
        background-color: #2e93d4;
   }
   ion-row:nth-child(even) {background-color:whitesmoke;}
+  #data{
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+  }
+  #email{
+    width: 20px;
+  }
+  ion-col{
+    border:none;
+ 
+  }
+  h1{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    text-align: center;
+  }
+ #add{
+  
+ }

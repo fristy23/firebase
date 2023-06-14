@@ -67,12 +67,10 @@ export class EmployeeComponent implements OnInit {
     var list: any = [];
     const querySnapshot = await getDocs(collection(db, "employee"));
     querySnapshot.forEach((doc) => {
-      // doc.data() is never undefined for query doc snapshots
-      //console.log(doc.id, " => ", doc.data());
+    
       list.push(doc.data())
     });
     this.employeeData = list;
-
   }
 
   Search(event: any) {
@@ -80,21 +78,11 @@ export class EmployeeComponent implements OnInit {
     for (let i of this.employeeData) {
       if (i.firstName == this.search || i.lastName == this.search || i.email == this.search || i.Number === this.search) {
         window.alert("data is present in table");
-        
-      
        const table = this.elRef.nativeElement.querySelector("table") as HTMLTableElement;
        const targetCell = i.firstName
        targetCell.style.color = "red";
-       
-        break;
-        
-      }
-      
+        break; 
+      } 
     }
-    // else {
-    //   window.alert("data is not present in table")
-    //   break;
-    // }
-
   }
 }
